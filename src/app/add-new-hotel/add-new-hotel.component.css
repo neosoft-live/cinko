@@ -1,0 +1,44 @@
+.select-location {
+  padding: 2.3rem 3.2rem;
+  background-color: #fdf3ff;
+}
+.select-location .location-heading {
+  font-family: var(--primary-font), sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: var(--black);
+}
+.search-location {
+  position: absolute;
+  top: 33%;
+  right: 12px;
+}
+
+.location-values {
+  font-family: var(--primary-font), sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #787878;
+}
+.float-label.nearest-location {
+  width: 365px;
+  max-width: 365px;
+}
+.file-label {
+  color: #687787;
+  font-family: var(--primary-font), sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.file-label + .file-placeholder::placeholder {
+  color: #a7a7a7;
+}
+@media (max-width: 576px) {
+  .float-label.nearest-location {
+    width: 250px;
+  }
+}

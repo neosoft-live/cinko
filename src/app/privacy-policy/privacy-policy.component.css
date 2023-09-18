@@ -1,0 +1,46 @@
+.aboutus-section__bg {
+  background-image: url("../../assets/img/about-us-bg.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 164px;
+}
+.aboutus-section__bg .section-title {
+  color: #f8f8f8;
+}
+.faq-section__title {
+  font-family: var(--primary-font), sans-serif;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  color: var(--primary-color);
+}
+.faq-section__text {
+  font-family: var(--primary-font), sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: var(--subtext);
+}
+.faq-section__sublist {
+  list-style: disc;
+}
+.list-number {
+  list-style-type: number;
+}
+.terms-content:last-child {
+  margin-bottom: 6rem;
+}
+@media (max-width: 576px) {
+  .faq-section__title {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+  .faq-section__text {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+  .terms-content:last-child {
+    margin-bottom: 3rem;
+  }
+}

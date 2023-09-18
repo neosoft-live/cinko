@@ -1,0 +1,35 @@
+.myhotels-text view {
+  color: #2277f8;
+}
+.chip{
+  border-radius: 32px;
+  padding: 6px 15px;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+.paid{  
+  border: 1px solid #1E9F23;
+  background: #EAFFEB;
+  color: #1E9F23;
+}
+.error{
+  border: 1px solid #C92F2F;
+  background: #FEE;
+  color: #C92F2F;
+}
+.pending{
+  color: #CB8927;
+  border: 1px solid #CB8927;
+  background: #FFF7EF;
+}
+
+.dropdown::after {
+  content: url('../../assets/img/dropdowntable.svg');
+  position: absolute;
+  display: inline-block;
+  right: -2px;
+  top: 42%;
+}

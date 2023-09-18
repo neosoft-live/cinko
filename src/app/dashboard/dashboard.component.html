@@ -1,0 +1,169 @@
+<div class="d-flex">
+  <div class="position-relative">
+    <aside class="aside-section" *ngIf='showMyContainer'>
+      <img
+        src="../../assets/img/cinko-image.png"
+        alt="cinko"
+        class="aside-cinko"
+      />
+      <div class="tabs-section">
+        <div class="dasboard-tabs d-flex align-items-center sideNavActive">
+          <img src="../../assets/img/dashboard.svg" alt="dashboard" class="iconActive"/>
+          <img src="../../assets/img/dashboardWhite.svg" alt="dashboard" class="iconNotActive"/>
+          <h2 class="dasboard-tabs__heading mb-0">Dashboard</h2>
+        </div>
+        <div class="dasboard-tabs d-flex align-items-center">
+          <img src="../../assets/img/my-hotelsActive.svg" alt="dashboard" class="iconActive" />
+          <img src="../../assets/img/my-hotels.svg" alt="dashboard" class="iconNotActive"/>
+          <h2 class="dasboard-tabs__heading mb-0">My Hotels</h2>
+        </div>
+        <div class="dasboard-tabs d-flex align-items-center">
+          <img src="../../assets/img/CalendarActive.svg" alt="dashboard" class="iconActive"/>
+          <img src="../../assets/img/Calendar.svg" alt="dashboard" class="iconNotActive"/>
+          <h2 class="dasboard-tabs__heading mb-0">Bookings</h2>
+        </div>
+        <div class="dasboard-tabs d-flex align-items-center">
+          <img src="../../assets/img/invoiceActive.svg" alt="dashboard" class="iconActive"/>
+          <img src="../../assets/img/invoice.svg" alt="dashboard" class="iconNotActive"/>
+          <h2 class="dasboard-tabs__heading mb-0">Invoices</h2>
+        </div>
+        <div class="dasboard-tabs d-flex align-items-center">
+          <img src="../../assets/img/roomActive.svg" alt="dashboard" class="iconActive"/>
+          <img src="../../assets/img/room.svg" alt="dashboard" class="iconNotActive"/>
+          <h2 class="dasboard-tabs__heading mb-0">Room</h2>
+        </div>
+        <div class="dasboard-tabs d-flex align-items-center">
+          <img src="../../assets/img/ticketActive.svg" alt="dashboard" class="iconActive"/>
+          <img src="../../assets/img/ticket.svg" alt="dashboard" class="iconNotActive"/>
+          <h2 class="dasboard-tabs__heading mb-0">Tickets</h2>
+        </div>
+        <div class="dasboard-tabs d-flex align-items-center">
+          <img src="../../assets/img/settingActive.svg" alt="dashboard" class="iconActive"/>
+          <img src="../../assets/img/setting.svg" alt="dashboard" class="iconNotActive"/>
+          <h2 class="dasboard-tabs__heading mb-0">Settings</h2>
+        </div>
+        
+      </div>
+    </aside>
+    <div class="sidebar-arrow d-flex justify-content-center align-items-center" [ngClass]="!showMyContainer ? 'arrowChange' : ''" (click)="showMyContainer=!showMyContainer" >
+      <img src="../../assets/img/sidebar-arrow.svg" alt="arrow" [ngClass]="!showMyContainer ? 'rotate90' : '' "/>
+    </div>
+  </div>
+  <section class="tabs-content w-100 overflow-hidden">
+    <header class="dashboard-header d-flex justify-content-between">
+      <h2 class="dashboard-heading mb-0">Dashboard</h2>
+      <div class="d-flex align-items-center">
+        <div
+          class="dashboard-search d-flex align-items-center justify-content-center me-4"
+        >
+          <img src="../../assets/img/dashboard-search.svg" alt="search" />
+        </div>
+        <div
+          class="dashboard-search d-flex align-items-center justify-content-center me-4"
+        >
+          <img src="../../assets/img/notification.svg" alt="search" />
+        </div>
+        <div class="user-name d-flex align-items-center">
+          <img
+            src="../../assets/img/user-img.png"
+            alt="user"
+            class="user-img"
+          />
+          <h2 class="user-heading">David Sperry</h2>
+        </div>
+      </div>
+    </header>
+    <section class="dashboard-section">
+      <div class="">
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="dashboard-card d-flex justify-content-between">
+              <div>
+                <h2 class="card-number mb-0">06</h2>
+                <p class="card-text">Rooms Registered</p>
+              </div>
+              <img
+                src="../../assets/img/dashboard-rooms-registered.svg"
+                alt="card-mg"
+                class="align-self-start dashboard-indecator-icon"
+              />
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="dashboard-card d-flex justify-content-between">
+              <div>
+                <h2 class="card-number mb-0">08</h2>
+                <p class="card-text">Rooms Available</p>
+              </div>
+              <img
+                src="../../assets/img/dashboard-rooms-available.svg"
+                alt="card-mg"
+                class="align-self-start dashboard-indecator-icon"
+              />
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="dashboard-card d-flex justify-content-between">
+              <div>
+                <h2 class="card-number mb-0">00</h2>
+                <p class="card-text">Invoices</p>
+              </div>
+              <img
+                src="../../assets/img/dashboard-invoice.svg"
+                alt="card-mg"
+                class="align-self-start dashboard-indecator-icon"
+              />
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="dashboard-card d-flex justify-content-between">
+              <div>
+                <h2 class="card-number mb-0">12</h2>
+                <p class="card-text">Tickets</p>
+              </div>
+              <img
+                src="../../assets/img/dashboard-tickets.svg"
+                alt="card-mg"
+                class="align-self-start dashboard-indecator-icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="graph-section mt-4">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="dasboard-subtitiles">Rooms Registered</h2>
+            <p class="graph-title">
+              <span>+0.7%</span>customers increased in today.
+            </p>
+            <div class="dashboard-card mt-4">
+              <div>
+                  <canvas id="barChart"></canvas>
+              </div>
+            </div>
+            <p class="updatedToaste">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.6875 9C1.6875 4.96125 4.96125 1.6875 9 1.6875C13.0387 1.6875 16.3125 4.96125 16.3125 9C16.3125 13.0387 13.0387 16.3125 9 16.3125C4.96125 16.3125 1.6875 13.0387 1.6875 9ZM8.217 7.9185C9.0765 7.48875 10.0448 8.26575 9.8115 9.198L9.27975 11.325L9.31125 11.31C9.44341 11.2519 9.59285 11.2468 9.72864 11.2959C9.86444 11.3449 9.97618 11.4443 10.0407 11.5734C10.1053 11.7025 10.1177 11.8515 10.0755 11.9896C10.0332 12.1276 9.93953 12.2441 9.81375 12.315L9.78375 12.3315C8.9235 12.7612 7.95525 11.9843 8.1885 11.052L8.721 8.925L8.6895 8.94C8.62315 8.97687 8.55003 8.99994 8.47453 9.0078C8.39904 9.01567 8.32273 9.00817 8.25021 8.98576C8.17769 8.96336 8.11045 8.9265 8.05255 8.87743C7.99464 8.82835 7.94727 8.76806 7.91329 8.70019C7.8793 8.63232 7.8594 8.55827 7.85479 8.4825C7.85018 8.40674 7.86095 8.33083 7.88645 8.25933C7.91195 8.18784 7.95166 8.12225 8.00319 8.06651C8.05471 8.01077 8.11698 7.96604 8.18625 7.935L8.217 7.9185ZM9 6.75C9.14918 6.75 9.29226 6.69074 9.39775 6.58525C9.50324 6.47976 9.5625 6.33668 9.5625 6.1875C9.5625 6.03832 9.50324 5.89524 9.39775 5.78975C9.29226 5.68426 9.14918 5.625 9 5.625C8.85082 5.625 8.70774 5.68426 8.60225 5.78975C8.49676 5.89524 8.4375 6.03832 8.4375 6.1875C8.4375 6.33668 8.49676 6.47976 8.60225 6.58525C8.70774 6.69074 8.85082 6.75 9 6.75Z" fill="#147AD8"/>
+              </svg> Updated 4 min ago
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="dasboard-subtitiles">Reservations</h2>
+            <p class="graph-title">Last campaign Performance</p>
+            <div class="dashboard-card mt-4">
+              <div>
+                <canvas id="lineChart"></canvas>
+            </div>
+            </div>
+            <p class="updatedToaste">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.6875 9C1.6875 4.96125 4.96125 1.6875 9 1.6875C13.0387 1.6875 16.3125 4.96125 16.3125 9C16.3125 13.0387 13.0387 16.3125 9 16.3125C4.96125 16.3125 1.6875 13.0387 1.6875 9ZM8.217 7.9185C9.0765 7.48875 10.0448 8.26575 9.8115 9.198L9.27975 11.325L9.31125 11.31C9.44341 11.2519 9.59285 11.2468 9.72864 11.2959C9.86444 11.3449 9.97618 11.4443 10.0407 11.5734C10.1053 11.7025 10.1177 11.8515 10.0755 11.9896C10.0332 12.1276 9.93953 12.2441 9.81375 12.315L9.78375 12.3315C8.9235 12.7612 7.95525 11.9843 8.1885 11.052L8.721 8.925L8.6895 8.94C8.62315 8.97687 8.55003 8.99994 8.47453 9.0078C8.39904 9.01567 8.32273 9.00817 8.25021 8.98576C8.17769 8.96336 8.11045 8.9265 8.05255 8.87743C7.99464 8.82835 7.94727 8.76806 7.91329 8.70019C7.8793 8.63232 7.8594 8.55827 7.85479 8.4825C7.85018 8.40674 7.86095 8.33083 7.88645 8.25933C7.91195 8.18784 7.95166 8.12225 8.00319 8.06651C8.05471 8.01077 8.11698 7.96604 8.18625 7.935L8.217 7.9185ZM9 6.75C9.14918 6.75 9.29226 6.69074 9.39775 6.58525C9.50324 6.47976 9.5625 6.33668 9.5625 6.1875C9.5625 6.03832 9.50324 5.89524 9.39775 5.78975C9.29226 5.68426 9.14918 5.625 9 5.625C8.85082 5.625 8.70774 5.68426 8.60225 5.78975C8.49676 5.89524 8.4375 6.03832 8.4375 6.1875C8.4375 6.33668 8.49676 6.47976 8.60225 6.58525C8.70774 6.69074 8.85082 6.75 9 6.75Z" fill="#147AD8"/>
+              </svg> Campaign sent 2 days ago
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </section>
+</div>

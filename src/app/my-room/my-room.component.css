@@ -1,0 +1,66 @@
+.roomBox h3{
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.roomBox h3 span{
+    color: #8F8F8F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.roomBox p span{
+    font-weight: 600;
+}
+.roomBox p{
+    color: #747474;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+
+.roomBox p.rate{
+    color: #680184;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.roomBox p.rate span{
+    color: #747474;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+.roomBox{
+    padding: 20px;
+    background-color: white;
+    margin-top: 20px;
+}
+.bgColor .col-md-6:last-child{
+    margin-bottom: 22px;
+}
+.roomBox .room-detail{
+    padding-left: 20px;
+}
+.iconWidth{
+    max-width: 144px ;
+    width: 100%;
+}
+.iconWidth img{
+    cursor: pointer;
+}
+@media screen and (max-width:900px) {
+    .roomBox{
+        flex-direction: column;
+    }
+    .room-detail{
+        padding-left: 0!important;
+    }
+}

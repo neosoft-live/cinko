@@ -1,0 +1,113 @@
+.aside-section {
+  width: 260px;
+  background: linear-gradient(180deg, #870ea8 0%, #4a005f 219.88%);
+  min-height: 100vh;
+}
+.aside-cinko {
+  height: 5rem;
+  margin-top: 2rem;
+  margin-left: 3.2rem;
+}
+.tabs-section {
+  margin-top: 5.4rem;
+}
+.dasboard-tabs {
+  padding: 1.6rem 1.3rem;
+  margin-left: 1.6rem;
+  color: var(--white);
+  cursor: pointer;
+}
+.dasboard-tabs__heading {
+  font-family: var(--primary-font), sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  margin-left: 1.3rem;
+  font-weight: 400;
+}
+
+.dashboard-indecator-icon{
+  width: 5.9rem;
+  height: 5.9rem;
+}
+
+.dasboard-tabs:hover,.sideNavActive {
+  background-color: var(--white);
+  color: var(--primary-color);
+  border-radius: 8px 0 0 8px;
+}
+.dasboard-tabs:hover .dasboard-tabs__heading {
+  font-weight: 600;
+}
+.sidebar-arrow {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: 1px solid #dadada;
+  background-color: var(--white);
+  position: absolute;
+  top: 24px;
+  right: -20px;
+  cursor: pointer;
+}
+
+.dashboard-card {
+  border-radius: 1rem;
+  background-color: var(--white);
+  padding: 2.3rem 2.3rem 2.5rem 3.5rem;
+  height: 100%;
+}
+.card-number {
+  font-family: var(--primary-font), sans-serif;
+  font-weight: 700;
+  font-size: 3.4rem;
+  line-height: 5.1rem;
+  color: var(--textblack);
+}
+.card-text {
+  font-family: var(--primary-font), sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #666666;
+}
+.dashboard-card img {
+  /* margin-left: 5rem; */
+}
+.updatedToaste {
+  background: var(--lightBgBlue);
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--blueText);
+  font-weight: 400;
+  line-height: 20px; 
+}
+.arrowChange{
+  background-color: #870ea8; 
+  color: var(--white);
+  left: -16px;
+}
+.rotate90 {
+  transform: rotate(180deg);
+  color: white;
+  fill: white;
+  filter: brightness(20);
+}
+.dasboard-subtitiles {
+  font-family: var(--primary-font), sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: var(--textblack);
+}
+.graph-title {
+  font-family: var(--primary-font), sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  color: #7d7d7d;
+}
+.graph-title span {
+  color: #6add41;
+  font-weight: 700;
+}

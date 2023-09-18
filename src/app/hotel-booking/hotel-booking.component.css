@@ -1,0 +1,21 @@
+.myhotels-text view {
+  color: #2277f8;
+}
+
+.dropdown::after {
+  content: url('../../assets/img/dropdowntable.svg');
+  position: absolute;
+  display: inline-block;
+  right: 5px;
+  top: 34%;
+}
+
+@media screen and (max-width: 1600px) {
+  .dropdown::after {
+    content: url('../../assets/img/dropdowntable.svg');
+    position: absolute;
+    display: inline-block;
+    right: 0px;
+    top: 39%;
+  }
+}

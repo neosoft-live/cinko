@@ -1,0 +1,275 @@
+<div class="d-flex">
+  <aside class="aside-section position-relative">
+    <img
+      src="../../assets/img/cinko-image.png"
+      alt="cinko"
+      class="aside-cinko"
+    />
+    <div class="tabs-section">
+      <div class="dasboard-tabs d-flex align-items-center">
+        <img src="../../assets/img/dashboard.svg" alt="dashboard" />
+        <h2 class="dasboard-tabs__heading mb-0">Dashboard</h2>
+      </div>
+      <div class="dasboard-tabs d-flex align-items-center">
+        <img src="../../assets/img/my-hotels.svg" alt="dashboard" />
+        <h2 class="dasboard-tabs__heading mb-0">My Hotels</h2>
+      </div>
+      <div class="dasboard-tabs d-flex align-items-center">
+        <img src="../../assets/img/my-hotels.svg" alt="dashboard" />
+        <h2 class="dasboard-tabs__heading mb-0">Bookings</h2>
+      </div>
+      <div class="dasboard-tabs d-flex align-items-center">
+        <img src="../../assets/img/my-hotels.svg" alt="dashboard" />
+        <h2 class="dasboard-tabs__heading mb-0">Invoices</h2>
+      </div>
+      <div class="dasboard-tabs d-flex align-items-center">
+        <img src="../../assets/img/my-hotels.svg" alt="dashboard" />
+        <h2 class="dasboard-tabs__heading mb-0">Room</h2>
+      </div>
+      <div class="dasboard-tabs d-flex align-items-center">
+        <img src="../../assets/img/my-hotels.svg" alt="dashboard" />
+        <h2 class="dasboard-tabs__heading mb-0">Tickets</h2>
+      </div>
+      <div class="dasboard-tabs d-flex align-items-center">
+        <img src="../../assets/img/my-hotels.svg" alt="dashboard" />
+        <h2 class="dasboard-tabs__heading mb-0">Settings</h2>
+      </div>
+      <div
+        class="sidebar-arrow d-flex justify-content-center align-items-center"
+      >
+        <img src="../../assets/img/sidebar-arrow.svg" alt="arrow" />
+      </div>
+    </div>
+  </aside>
+  <section class="tabs-content content-right">
+    <header
+      class="dashboard-header d-flex justify-content-between align-items-center"
+    >
+      <nav>
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active"><a href="#">Hotels</a></li>
+        </ol>
+      </nav>
+      <div class="d-flex align-items-center">
+        <div
+          class="dashboard-search d-flex align-items-center justify-content-center me-4"
+        >
+          <img src="../../assets/img/dashboard-search.svg" alt="search" />
+        </div>
+        <div
+          class="dashboard-search d-flex align-items-center justify-content-center me-4"
+        >
+          <img src="../../assets/img/notification.svg" alt="search" />
+        </div>
+        <div class="user-name d-flex align-items-center">
+          <img
+            src="../../assets/img/user-img.png"
+            alt="user"
+            class="user-img"
+          />
+          <h2 class="user-heading">David Sperry</h2>
+        </div>
+      </div>
+    </header>
+    <section class="dashboard-section">
+      
+      <h2 class="dashboard-heading mb-0">Hotels</h2>
+      <div>
+        <main>
+          <div class="hotelList_wrapper dt-bootstrap5">           
+            <div class="d-flex justify-content-between">
+              <div class="search_filter">
+                <label>
+                  <input type="search" class="form-control" placeholder="Search" aria-controls="search">
+                  <img src="../../assets/img/dashboard-search.svg" alt="search"/>
+                </label>
+              </div>
+              <div class="addHotelBtn">
+                <button class="btn btn-primary">+ Add New Hotel</button>
+              </div>
+            </div>
+
+            <div class="row dt-row">
+              <div class="col-sm-12 responsive-table">
+                <table id="example" class="hotelDataTable" style="width: 100%;" aria-describedby="example_info">
+                  <thead>
+                    <tr>
+                      <th tabindex="0" aria-controls="" rowspan="1" colspan="1" aria-sort="ascending" aria-label="activate to sort column descending" style="width: 172px;">Hotel Name</th>
+                      <th tabindex="0" aria-controls="" rowspan="1" colspan="1" aria-label="activate to sort column ascending" style="min-width: 172px; max-width: 500px;">Address</th>
+                      <th class="dropdown" tabindex="0" aria-controls="" rowspan="1" colspan="1" aria-label="activate to sort column ascending" style="min-width: 120px; max-width: 220px;">Country</th>
+                      <th class="dropdown" tabindex="0" aria-controls="" rowspan="1" colspan="1" aria-label="activate to sort column ascending" style="width: 172px;">State</th>
+                      <th tabindex="0" aria-controls="" rowspan="1" colspan="1" aria-label="activate to sort column ascending" style="width: 172px;">City</th>
+                      <th rowspan="1" colspan="1" aria-label="" style="width: 190px;">Zipcode</th>
+                      <th rowspan="1" colspan="1" aria-label="" style="width: 190px;">Rooms</th>
+                      <th rowspan="1" colspan="1" aria-label="" style="width: 190px;">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="odd">
+                      <td class="sorting_1">Azul</td>
+                      <td>05 S Amos Ave, Springfield, IL 62704</td>
+                      <td>United States</td>
+                      <td>Illinois</td>
+                      <td>Springfield</td>
+                      <td>62704</td>
+                      <td>3</td>
+                      <td class="d-flex">
+                        <a href="#" target="_blank" class="link">
+                          <img src="../../assets/img/eyeToView.svg" alt="view hotel">
+                        </a>
+                        <a href="#" target="_blank" class="link">
+                          <img src="../../assets/img/edit.svg" alt="edit hotel" class="m-set">
+                         </a>
+                         <a href="#" target="_blank" class="link">
+                          <img src="../../assets/img/trash.svg" alt="trash hotel">
+                         </a>
+                        </td>
+                    </tr>
+
+                    <tr class="even">
+                      <td class="sorting_1">Azul</td>
+                      <td>05 S Amos Ave, Springfield, IL 62704</td>
+                      <td>United States</td>
+                      <td>Illinois</td>
+                      <td>Springfield</td>
+                      <td>62704</td>
+                      <td>3</td>
+                      <td>
+                        <a href="#" target="_blank" class="link">
+                          <img src="../../assets/img/eyeToView.svg" alt="view hotel">
+                        </a>
+                        <a href="#" target="_blank" class="link">
+                          <img src="../../assets/img/edit.svg" alt="edit hotel" class="m-set">
+                         </a>
+                         <a href="#" target="_blank" class="link">
+                          <img src="../../assets/img/trash.svg" alt="trash hotel">
+                         </a>
+                        </td>
+                    </tr>      
+
+                    <tr class="odd">
+                      <td class="sorting_1">Ebony</td>
+                      <td>05 S Amos Ave, Springfield, IL 62704</td>
+                      <td>United States</td>
+                      <td>Illinois</td>
+                      <td>Springfield</td>
+                      <td>62704</td>
+                      <td>3</td>
+                      <td>
+                        <a href="#" target="_blank" class="link">
+                          <img src="../../assets/img/eyeToView.svg" alt="view hotel">
+                        </a>
+                        <a href="#" target="_blank" class="link">
+                          <img src="../../assets/img/edit.svg" alt="edit hotel" class="m-set">
+                         </a>
+                         <a href="#" target="_blank" class="link">
+                          <img src="../../assets/img/trash.svg" alt="trash hotel">
+                         </a>
+                        </td>
+                    </tr>
+
+                    <tr class="even">
+                      <td class="sorting_1">Altheda</td>
+                      <td>05 S Amos Ave, Springfield, IL 62704</td>
+                      <td>United States</td>
+                      <td>Illinois</td>
+                      <td>Springfield</td>
+                      <td>62704</td>
+                      <td>3</td>
+                      <td>
+                        <a href="#" target="_blank" class="link">
+                          <img src="../../assets/img/eyeToView.svg" alt="view hotel">
+                        </a>
+                        <a href="#" target="_blank" class="link">
+                          <img src="../../assets/img/edit.svg" alt="edit hotel" class="m-set">
+                         </a>
+                         <a href="#" target="_blank" class="link">
+                          <img src="../../assets/img/trash.svg" alt="trash hotel">
+                         </a>
+                        </td>
+                    </tr>      
+
+                    <tr class="odd">
+                      <td class="sorting_1">Citrus</td>
+                      <td>05 S Amos Ave, Springfield, IL 62704</td>
+                      <td>United States</td>
+                      <td>Illinois</td>
+                      <td>Springfield</td>
+                      <td>62704</td>
+                      <td>3</td>
+                      <td>
+                        <a href="#" target="_blank" class="link">
+                          <img src="../../assets/img/eyeToView.svg" alt="view hotel">
+                        </a>
+                        <a href="#" target="_blank" class="link">
+                          <img src="../../assets/img/edit.svg" alt="edit hotel" class="m-set">
+                         </a>
+                         <a href="#" target="_blank" class="link">
+                          <img src="../../assets/img/trash.svg" alt="trash hotel">
+                         </a>
+                        </td>
+                    </tr>
+
+                    <tr class="even">
+                      <td class="sorting_1">Azul</td>
+                      <td>05 S Amos Ave, Springfield, IL 62704</td>
+                      <td>United States</td>
+                      <td>Illinois</td>
+                      <td>Springfield</td>
+                      <td>62704</td>
+                      <td>3</td>
+                      <td>
+                        <a href="#" target="_blank" class="link">
+                          <img src="../../assets/img/eyeToView.svg" alt="view hotel">
+                        </a>
+                        <a href="#" target="_blank" class="link">
+                          <img src="../../assets/img/edit.svg" alt="edit hotel" class="m-set">
+                         </a>
+                         <a href="#" target="_blank" class="link">
+                          <img src="../../assets/img/trash.svg" alt="trash hotel">
+                         </a>
+                        </td>
+                    </tr>      
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="dataTables_info py-5 mt-0" id="example_info" role="status" aria-live="polite">Show <select><option [defaultSelected]="6">6</option><option [defaultSelected]="6">6</option><option>1 </option></select> entries</div>
+              
+                <div>
+                  <ul class="pagination">
+                    <li class="paginate_button page-item previous disabled" id="hotel_previous">
+                      <a aria-controls="example" aria-disabled="true" role="link" data-dt-idx="previous" tabindex="0" class="page-link">
+                        <span class="fa fa-chevron-left">Previous</span>
+                      </a>
+                    </li>
+                    <li class="paginate_button page-item active">
+                      <a href="#" aria-controls="example" role="link" aria-current="page" data-dt-idx="0" tabindex="0" class="page-link">1</a>
+                    </li>
+                    <li class="paginate_button page-item ">
+                      <a href="#" aria-controls="example" role="link" data-dt-idx="1" tabindex="0" class="page-link">2</a>
+                    </li>
+                    <li class="paginate_button page-item ">
+                      <a href="#" aria-controls="example" role="link" data-dt-idx="2" tabindex="0" class="page-link">3</a>
+                    </li>
+                    
+                    <li class="paginate_button page-item next" id="example_next">
+                      <a href="#" aria-controls="example" role="link" data-dt-idx="next" tabindex="0" class="page-link">
+                        <span class="fa fa-chevron-right">Next</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </main>
+      </div>
+    </section>
+  </section>
+</div>

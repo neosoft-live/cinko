@@ -1,0 +1,35 @@
+.myhotels-text view {
+  color: #2277f8;
+}
+
+.m-set{
+  margin: 0 10px;
+}
+
+thead tr th:last-child{
+  text-align: center;
+}
+
+.dropdown::after {
+  content: url('../../assets/img/dropdowntable.svg');
+  position: absolute;
+  display: inline-block;
+  right: 0px;
+  top: 34%;
+}
+
+@media screen and (max-width: 1300px) {
+  .dropdown::after {
+    content: url('../../assets/img/dropdowntable.svg');
+    position: absolute;
+    display: inline-block;
+    right: 0px;
+    top: 39%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .m-set{
+    margin: 10px 0px;
+  }
+}

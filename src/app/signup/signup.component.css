@@ -1,0 +1,50 @@
+.register-form {
+  padding: 8rem 0 8rem 10rem;
+}
+input[type="date"]:in-range::-webkit-datetime-edit-year-field,
+input[type="date"]:in-range::-webkit-datetime-edit-month-field,
+input[type="date"]:in-range::-webkit-datetime-edit-day-field,
+input[type="date"]:in-range::-webkit-datetime-edit-text {
+  color: transparent;
+}
+.gender-title {
+  color: #687787;
+  font-family: var(--primary-font), sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.gender-name {
+  color: #3a3a3a;
+  margin-left: 6px;
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+.check-conditions {
+  margin-top: 2.4rem;
+  margin-bottom: 5.3rem;
+}
+
+@media (max-width: 991px) {
+  .register-form {
+    padding: 1rem 0rem;
+  }
+}
+@media (max-width: 767px) {
+  .check-conditions {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .col-hide-sm{
+    display: none;
+  }
+}

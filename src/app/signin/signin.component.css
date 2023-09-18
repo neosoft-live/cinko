@@ -1,0 +1,66 @@
+.hr-lines {
+  position: relative;
+  color: #b5b5b5;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  margin-top: 3rem;
+  margin-bottom: 2.7rem;
+}
+
+.hr-lines:before {
+  content: " ";
+  height: 1px;
+  width: 45%;
+  background: #b5b5b5;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.hr-lines:after {
+  content: " ";
+  height: 1px;
+  width: 45%;
+  background: #b5b5b5;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.signin-section {
+  padding-left: 10rem;
+}
+.label_text {
+  font-family: var(--primary-font), sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 16px;
+  color: var(--primary-color);
+}
+.sigin-btn {
+  margin-top: 4rem;
+}
+
+@media (max-width: 991px) {
+  .signin-section {
+    padding-left: 4rem;
+  }
+  .hr-lines {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .sigin-btn {
+    margin-top: 2rem;
+  }
+  
+}
+@media (max-width: 767px) {
+  .signin-section {
+    padding-left: 0;
+  }
+  .col-hide-sm{
+    display: none;
+  }
+}

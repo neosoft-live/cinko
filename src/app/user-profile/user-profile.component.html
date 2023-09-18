@@ -1,0 +1,301 @@
+<div class="d-flex">
+  <aside class="aside-section position-relative">
+    <img
+      src="../../assets/img/cinko-image.png"
+      alt="cinko"
+      class="aside-cinko"
+    />
+    <div class="tabs-section">
+      <div class="dasboard-tabs d-flex align-items-center">
+        <img src="../../assets/img/dashboard.svg" alt="dashboard" />
+        <h2 class="dasboard-tabs__heading mb-0">Dashboard</h2>
+      </div>
+      <div class="dasboard-tabs d-flex align-items-center">
+        <img src="../../assets/img/my-hotels.svg" alt="dashboard" />
+        <h2 class="dasboard-tabs__heading mb-0">My Hotels</h2>
+      </div>
+      <div class="dasboard-tabs d-flex align-items-center">
+        <img src="../../assets/img/my-hotels.svg" alt="dashboard" />
+        <h2 class="dasboard-tabs__heading mb-0">Bookings</h2>
+      </div>
+      <div class="dasboard-tabs d-flex align-items-center">
+        <img src="../../assets/img/my-hotels.svg" alt="dashboard" />
+        <h2 class="dasboard-tabs__heading mb-0">Invoices</h2>
+      </div>
+      <div class="dasboard-tabs d-flex align-items-center">
+        <img src="../../assets/img/my-hotels.svg" alt="dashboard" />
+        <h2 class="dasboard-tabs__heading mb-0">Room</h2>
+      </div>
+      <div class="dasboard-tabs d-flex align-items-center">
+        <img src="../../assets/img/my-hotels.svg" alt="dashboard" />
+        <h2 class="dasboard-tabs__heading mb-0">Tickets</h2>
+      </div>
+      <div class="dasboard-tabs d-flex align-items-center">
+        <img src="../../assets/img/my-hotels.svg" alt="dashboard" />
+        <h2 class="dasboard-tabs__heading mb-0">Settings</h2>
+      </div>
+      <div
+        class="sidebar-arrow d-flex justify-content-center align-items-center"
+      >
+        <img src="../../assets/img/sidebar-arrow.svg" alt="arrow" />
+      </div>
+    </div>
+  </aside>
+  <section class="tabs-content">
+    <header
+      class="dashboard-header d-flex justify-content-between align-items-center"
+    >
+      <nav>
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active"><a href="#">My Rooms</a></li>
+        </ol>
+      </nav>
+      <div class="d-flex align-items-center">
+        <div
+          class="dashboard-search d-flex align-items-center justify-content-center me-4"
+        >
+          <img src="../../assets/img/dashboard-search.svg" alt="search" />
+        </div>
+        <div
+          class="dashboard-search d-flex align-items-center justify-content-center me-4"
+        >
+          <img src="../../assets/img/notification.svg" alt="search" />
+        </div>
+        <div class="user-name d-flex align-items-center">
+          <img
+            src="../../assets/img/user-img.png"
+            alt="user"
+            class="user-img"
+          />
+          <h2 class="user-heading">David Sperry</h2>
+        </div>
+      </div>
+    </header>
+    <section class="dashboard-section">
+      <h2 class="dashboard-heading mb-0">My Rooms</h2>
+      <div class="user-profile">
+        <div class="position-relative">
+          <img
+            src="../../assets/img/profile-bg.png"
+            alt="profile"
+            class="w-100 user-bg"
+          />
+          <img
+            src="../../assets/img/camara.svg"
+            alt="cam"
+            class="user-camara"
+          />
+        </div>
+
+        <div class="user-details">
+          <div class="row">
+            <div class="col-lg-2 position-relative">
+              <div class="user-profile__picture">
+                <div class="">
+                  <img
+                    src="../../assets/img/user-profile.png"
+                    alt="profile"
+                    class="user-image"
+                  />
+                  <img
+                    src="../../assets/img/profile-cam.svg"
+                    alt="profile-cam"
+                    class="profile-cam"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <h2 class="dashboard-heading mb-0">David Sperry</h2>
+              <div class="d-flex user-contact_data">
+                <div class="d-flex align-items-center user-info__mail">
+                  <div
+                    class="user-info_img d-flex justify-content-center align-items-center"
+                  >
+                    <img src="../../assets/img/message-box.svg" alt="message" />
+                  </div>
+                  <div class="user-info">
+                    <p class="user-media mb-0">Email</p>
+                    <p class="user-contact mb-0">dsperry@remwes.com</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div
+                    class="user-info_img d-flex justify-content-center align-items-center"
+                  >
+                    <img src="../../assets/img/phone-box.svg" alt="message" />
+                  </div>
+                  <div class="user-info">
+                    <p class="user-media mb-0">Phone</p>
+                    <p class="user-contact mb-0">+1 6626666647</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 update-profile__btn">
+              <button class="btn btn-tritary" (click)="updateProfile()">Update Profile</button>
+            </div>
+          </div>
+          <div class="row user-address">
+            <div class="col-md-2">
+              <h2 class="myhotels-title">Gender</h2>
+              <p class="myhotels-text">Male</p>
+            </div>
+            <div class="col-md-2">
+              <h2 class="myhotels-title">Address</h2>
+              <p class="myhotels-text">Springfield</p>
+            </div>
+            <div class="col-md-2">
+              <h2 class="myhotels-title">City</h2>
+              <p class="myhotels-text">Springfield</p>
+            </div>
+            <div class="col-md-2">
+              <h2 class="myhotels-title">State</h2>
+              <p class="myhotels-text">Illinois</p>
+            </div>
+            <div class="col-md-2">
+              <h2 class="myhotels-title">Country</h2>
+              <p class="myhotels-text">United States</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="user-settings">
+        <h2 class="user-settings__heading mb-3">Setting</h2>
+        <div class="setting-list">
+          <p class="title mb-0">Reset password</p>
+        </div>
+        <div class="setting-list">
+          <p class="title mb-0">Update Payments Details</p>
+        </div>
+        <div class="setting-list">
+          <p class="title mb-0">Receive Notifications</p>
+        </div>
+        <button class="btn btn-danger mt-5">Logout</button>
+      </div>
+    </section>
+  </section>
+</div>
+
+<div class="popup-overlary" *ngIf="showUpdateProfilePopup">
+  <div class="model">
+    <div class="model-header d-flex justify-content-between">
+      <h2 class="model-title">Update Card</h2>
+      <img src="../../assets/img/close-model.svg" alt="close model" (click)="updateProfile()">
+    </div>
+    <div class="model-content">
+      <div class="row">
+        <p class="payment-title mb-0">Payment Type</p>
+        <div class="d-flex align-items-center mb-3">
+          <div class="d-flex align-items-center payment-radio">
+            <input type="radio" id="Paypal" name="gender" />
+            <label for="Paypal" class="payment-title text-black">Paypal</label>
+          </div>
+          <div class="d-flex align-items-center payment-radio">
+            <input type="radio" id="ach" name="gender" />
+            <label for="ach" class="payment-title"
+              >ACH</label
+            >
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="float-label mb-5">
+            <select class="form-select" aria-label="Default select example" class="float-control">
+              <option selected>Bank Name</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+            </select>
+            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="float-label mb-5">
+            <select class="form-select" aria-label="Default select example" class="float-control">
+              <option selected>Bank Address</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+            </select>
+            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="float-label mb-5">
+            <select class="form-select" aria-label="Default select example" class="float-control">
+              <option selected>Bank Routing Number</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+            </select>
+            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="float-label mb-5">
+            <select class="form-select" aria-label="Default select example" class="float-control">
+              <option selected>Bank Account Number </option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+            </select>
+            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="float-label mb-5">
+            <select class="form-select" aria-label="Default select example" class="float-control">
+              <option selected>Company Name </option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+            </select>
+            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="float-label mb-5">
+            <select class="form-select" aria-label="Default select example" class="float-control">
+              <option selected>Swift Code </option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+            </select>
+            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="float-label mb-5">
+            <select class="form-select" aria-label="Default select example" class="float-control">
+              <option selected>Account Type </option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+            </select>
+            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+          </div>
+        </div>
+        
+      </div>
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-tritary" (click)="updateProfile()">CLOSE</button>
+        <button class="btn btn-primary">SUBMIT</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,79 @@
+.aboutus-section__bg {
+  background-image: url("../../assets/img/about-us-bg.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 164px;
+}
+.aboutus-section__bg .section-title {
+  color: #f8f8f8;
+}
+
+.terms-conditions {
+  font-family: var(--primary-font), sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: var(--primary-color);
+  background-color: #fdf4ff;
+  border-left: 0.7rem solid var(--primary-color);
+  padding: 0.8rem 4.2rem 0.8rem 1.5rem;
+  width: fit-content;
+  margin-top: 4.4rem;
+  margin-bottom: 2.7rem;
+}
+
+.faq-section__title {
+  font-family: var(--primary-font), sans-serif;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  color: var(--primary-color);
+}
+.faq-section__text {
+  font-family: var(--primary-font), sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: var(--subtext);
+}
+.list-number {
+  list-style-type: number;
+}
+.faq-section__sublist {
+  list-style: disc;
+}
+.cinko-link {
+  text-decoration: none;
+  color: var(--subtext);
+  font-weight: 700;
+}
+.terms-support {
+  color: #0053b4;
+  font-weight: 700;
+}
+.faq-section__text.terms-area {
+  color: #005798;
+}
+.terms-content:last-child {
+  margin-bottom: 6rem;
+}
+.policy-link {
+  color: var(--subtext);
+}
+.faq-section__text.wrapping-text {
+  word-wrap: break-word;
+}
+@media (max-width: 576px) {
+  .faq-section__title {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+  .faq-section__text {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+  .terms-content:last-child {
+    margin-bottom: 3rem;
+  }
+}
