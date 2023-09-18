@@ -9,11 +9,11 @@ import { TermsConditionsComponent } from './terms-conditions/terms-conditions.co
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   redirectTo: '/home',
-  //   pathMatch: 'full',
-  // },
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full',
+  },
   {
     path: 'about-us',
     component: AboutUsComponent,
@@ -42,10 +42,10 @@ const routes: Routes = [
     path: 'privacy-policy',
     component: PrivacyPolicyComponent,
   },
-  // {
-  //   path: '**',
-  //   component: HomeComponent,
-  // },
+  {
+    path: '**',
+    component: HomeComponent,
+  },
 ];
 
 @NgModule({
