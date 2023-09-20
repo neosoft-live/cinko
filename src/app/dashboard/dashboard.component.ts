@@ -21,8 +21,6 @@ export class DashboardComponent {
               backgroundColor: [
                   'rgba(58, 183, 255, 1)',
               ],
-              barPercentage:0.8,
-              categoryPercentage:0.5,
               borderRadius: Number.MAX_VALUE,
               borderSkipped: false,
               borderWidth: 1
@@ -32,8 +30,6 @@ export class DashboardComponent {
             backgroundColor: [
                 'rgba(206, 79, 240, 0.92)',
             ],
-            barPercentage:0.8,
-            categoryPercentage:0.5,
             borderRadius: Number.MAX_VALUE,
             borderSkipped: false,
             borderWidth: 1
@@ -82,10 +78,5 @@ export class DashboardComponent {
         }
     }
 });
-
-
-    barChart.resize();
   }
-
- 
 }

@@ -385,10 +385,7 @@ html {
 
 .dashboard-section {
   background-color: #f5f7fb;
-  padding: 3.5rem 3.2rem;
-  overflow-y: auto;
-  min-height: calc(100% - 91px);
-  max-height: calc(100% - 91px);
+  padding: 3.3rem;
 }
 .aside-section {
   width: 260px;
@@ -408,7 +405,6 @@ html {
   margin-left: 1.6rem;
   color: var(--white);
   cursor: pointer;
-  text-decoration: none;
 }
 .dasboard-tabs__heading {
   font-family: var(--primary-font), sans-serif;
@@ -454,7 +450,6 @@ html {
   top: 24px;
   right: -20px;
   cursor: pointer;
-  z-index: 3;
 }
 .dashboard-header {
   padding: 2.5rem 3.3rem;
@@ -557,7 +552,6 @@ html {
 /* Newly added css */
 .content-right{
   width: calc(100% - 260px);
-  position: relative;
 }
 
 .responsive-table{
@@ -1002,8 +996,6 @@ footer {
     margin-top: 1rem;
   }
 }
-
-
 /* home component css */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap");
 /* home styling */
@@ -1152,7 +1144,7 @@ footer {
 /* -------------------------- */
 /* how it works */
 .howitworks {
-  /* padding-top: 8rem; */
+  padding-top: 8rem;
   padding-bottom: 8rem;
 }
 .howitworks .section-title {
@@ -1508,4 +1500,3 @@ footer {
     right: 1rem;
   }
 }
-

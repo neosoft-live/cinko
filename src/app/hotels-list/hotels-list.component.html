@@ -1,8 +1,47 @@
 <div class="d-flex">
-  <div class="position-relative">
-    <app-admin-aside></app-admin-aside>
-  </div>
-  <section class="tabs-content content-right w-100">
+  <aside class="aside-section position-relative">
+    <img
+      src="../../assets/img/cinko-image.png"
+      alt="cinko"
+      class="aside-cinko"
+    />
+    <div class="tabs-section">
+      <div class="dasboard-tabs d-flex align-items-center">
+        <img src="../../assets/img/dashboard.svg" alt="dashboard" />
+        <h2 class="dasboard-tabs__heading mb-0">Dashboard</h2>
+      </div>
+      <div class="dasboard-tabs d-flex align-items-center">
+        <img src="../../assets/img/my-hotels.svg" alt="dashboard" />
+        <h2 class="dasboard-tabs__heading mb-0">My Hotels</h2>
+      </div>
+      <div class="dasboard-tabs d-flex align-items-center">
+        <img src="../../assets/img/my-hotels.svg" alt="dashboard" />
+        <h2 class="dasboard-tabs__heading mb-0">Bookings</h2>
+      </div>
+      <div class="dasboard-tabs d-flex align-items-center">
+        <img src="../../assets/img/my-hotels.svg" alt="dashboard" />
+        <h2 class="dasboard-tabs__heading mb-0">Invoices</h2>
+      </div>
+      <div class="dasboard-tabs d-flex align-items-center">
+        <img src="../../assets/img/my-hotels.svg" alt="dashboard" />
+        <h2 class="dasboard-tabs__heading mb-0">Room</h2>
+      </div>
+      <div class="dasboard-tabs d-flex align-items-center">
+        <img src="../../assets/img/my-hotels.svg" alt="dashboard" />
+        <h2 class="dasboard-tabs__heading mb-0">Tickets</h2>
+      </div>
+      <div class="dasboard-tabs d-flex align-items-center">
+        <img src="../../assets/img/my-hotels.svg" alt="dashboard" />
+        <h2 class="dasboard-tabs__heading mb-0">Settings</h2>
+      </div>
+      <div
+        class="sidebar-arrow d-flex justify-content-center align-items-center"
+      >
+        <img src="../../assets/img/sidebar-arrow.svg" alt="arrow" />
+      </div>
+    </div>
+  </aside>
+  <section class="tabs-content content-right">
     <header
       class="dashboard-header d-flex justify-content-between align-items-center"
     >
@@ -47,7 +86,7 @@
                 </label>
               </div>
               <div class="addHotelBtn">
-                <button class="btn btn-primary" routerLink="/add-new-hotel">+ Add New Hotel</button>
+                <button class="btn btn-primary">+ Add New Hotel</button>
               </div>
             </div>
 
@@ -57,13 +96,13 @@
                   <thead>
                     <tr>
                       <th tabindex="0" aria-controls="" rowspan="1" colspan="1" aria-sort="ascending" aria-label="activate to sort column descending" style="width: 172px;">Hotel Name</th>
-                      <th tabindex="0" aria-controls="" rowspan="1" colspan="1" aria-label="activate to sort column ascending" style="min-width: 234px; max-width: 500px;">Address</th>
-                      <th class="dropdown" tabindex="0" aria-controls="" rowspan="1" colspan="1" aria-label="activate to sort column ascending" style="min-width: 141px; max-width: 220px;">Country</th>
+                      <th tabindex="0" aria-controls="" rowspan="1" colspan="1" aria-label="activate to sort column ascending" style="min-width: 172px; max-width: 500px;">Address</th>
+                      <th class="dropdown" tabindex="0" aria-controls="" rowspan="1" colspan="1" aria-label="activate to sort column ascending" style="min-width: 120px; max-width: 220px;">Country</th>
                       <th class="dropdown" tabindex="0" aria-controls="" rowspan="1" colspan="1" aria-label="activate to sort column ascending" style="width: 172px;">State</th>
                       <th tabindex="0" aria-controls="" rowspan="1" colspan="1" aria-label="activate to sort column ascending" style="width: 172px;">City</th>
                       <th rowspan="1" colspan="1" aria-label="" style="width: 190px;">Zipcode</th>
                       <th rowspan="1" colspan="1" aria-label="" style="width: 190px;">Rooms</th>
-                      <th rowspan="1" colspan="1" aria-label="" style="width: 150px;">Action</th>
+                      <th rowspan="1" colspan="1" aria-label="" style="width: 190px;">Action</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -75,7 +114,7 @@
                       <td>Springfield</td>
                       <td>62704</td>
                       <td>3</td>
-                      <td class="d-flex justify-content-around">
+                      <td class="d-flex">
                         <a href="#" target="_blank" class="link">
                           <img src="../../assets/img/eyeToView.svg" alt="view hotel">
                         </a>
@@ -96,7 +135,7 @@
                       <td>Springfield</td>
                       <td>62704</td>
                       <td>3</td>
-                      <td  class="d-flex justify-content-around">
+                      <td>
                         <a href="#" target="_blank" class="link">
                           <img src="../../assets/img/eyeToView.svg" alt="view hotel">
                         </a>
@@ -117,7 +156,7 @@
                       <td>Springfield</td>
                       <td>62704</td>
                       <td>3</td>
-                      <td class="d-flex justify-content-around">
+                      <td>
                         <a href="#" target="_blank" class="link">
                           <img src="../../assets/img/eyeToView.svg" alt="view hotel">
                         </a>
@@ -138,7 +177,7 @@
                       <td>Springfield</td>
                       <td>62704</td>
                       <td>3</td>
-                      <td  class="d-flex justify-content-around">
+                      <td>
                         <a href="#" target="_blank" class="link">
                           <img src="../../assets/img/eyeToView.svg" alt="view hotel">
                         </a>
@@ -159,7 +198,7 @@
                       <td>Springfield</td>
                       <td>62704</td>
                       <td>3</td>
-                      <td  class="d-flex justify-content-around">
+                      <td>
                         <a href="#" target="_blank" class="link">
                           <img src="../../assets/img/eyeToView.svg" alt="view hotel">
                         </a>
@@ -180,7 +219,7 @@
                       <td>Springfield</td>
                       <td>62704</td>
                       <td>3</td>
-                      <td  class="d-flex justify-content-around">
+                      <td>
                         <a href="#" target="_blank" class="link">
                           <img src="../../assets/img/eyeToView.svg" alt="view hotel">
                         </a>
@@ -209,7 +248,7 @@
                       </a>
                     </li>
                     <li class="paginate_button page-item active">
-                      <a href="#" aria-controls="example" role="link" aria-current="page" data-dt-idx="0" tabindex="0" class="page-link active">1</a>
+                      <a href="#" aria-controls="example" role="link" aria-current="page" data-dt-idx="0" tabindex="0" class="page-link">1</a>
                     </li>
                     <li class="paginate_button page-item ">
                       <a href="#" aria-controls="example" role="link" data-dt-idx="1" tabindex="0" class="page-link">2</a>
