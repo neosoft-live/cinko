@@ -23,6 +23,7 @@ import { HotelBookingComponent } from './hotel-booking/hotel-booking.component';
 import { HotelInvoiceComponent } from './hotel-invoice/hotel-invoice.component';
 import { HotelTicketComponent } from './hotel-ticket/hotel-ticket.component';
 import { MyRoomComponent } from './my-room/my-room.component';
+import { AdminAsideComponent } from './admin-aside/admin-aside.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { MyRoomComponent } from './my-room/my-room.component';
     HotelBookingComponent,
     HotelInvoiceComponent,
     HotelTicketComponent,
-    MyRoomComponent
+    MyRoomComponent,
+    AdminAsideComponent
   ],
   imports: [
     BrowserModule,
