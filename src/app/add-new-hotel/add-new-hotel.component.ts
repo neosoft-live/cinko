@@ -5,4 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './add-new-hotel.component.html',
   styleUrls: ['./add-new-hotel.component.css'],
 })
-export class AddNewHotelComponent {}
+export class AddNewHotelComponent {
+
+
+  showMyContainer: boolean = true;
+}
