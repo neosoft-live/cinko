@@ -8,7 +8,7 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <!-- Toolbar -->
-<app-header></app-header>
+<app-header *ngIf="showHeader"></app-header>
 <!-- <app-home></app-home>  -->
 <!-- need to talk with mansi -->
 <!-- <app-about-us></app-about-us>  -->
@@ -33,7 +33,7 @@
 <!-- <app-user-profile></app-user-profile> -->
 <!-- <app-privacy-policy></app-privacy-policy> -->
 
-<app-footer></app-footer>
+<app-footer *ngIf="showFooter"></app-footer>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
