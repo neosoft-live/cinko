@@ -1,6 +1,53 @@
 <div class="d-flex">
   <div class="position-relative">
-    <app-admin-aside></app-admin-aside>
+    <aside class="aside-section" *ngIf='showMyContainer'>
+      <img
+        src="../../assets/img/cinko-image.png"
+        alt="cinko"
+        class="aside-cinko"
+      />
+      <div class="tabs-section">
+        <div class="dasboard-tabs d-flex align-items-center sideNavActive">
+          <img src="../../assets/img/dashboard.svg" alt="dashboard" class="iconActive"/>
+          <img src="../../assets/img/dashboardWhite.svg" alt="dashboard" class="iconNotActive"/>
+          <h2 class="dasboard-tabs__heading mb-0">Dashboard</h2>
+        </div>
+        <div class="dasboard-tabs d-flex align-items-center">
+          <img src="../../assets/img/my-hotelsActive.svg" alt="dashboard" class="iconActive" />
+          <img src="../../assets/img/my-hotels.svg" alt="dashboard" class="iconNotActive"/>
+          <h2 class="dasboard-tabs__heading mb-0">My Hotels</h2>
+        </div>
+        <div class="dasboard-tabs d-flex align-items-center">
+          <img src="../../assets/img/CalendarActive.svg" alt="dashboard" class="iconActive"/>
+          <img src="../../assets/img/Calendar.svg" alt="dashboard" class="iconNotActive"/>
+          <h2 class="dasboard-tabs__heading mb-0">Bookings</h2>
+        </div>
+        <div class="dasboard-tabs d-flex align-items-center">
+          <img src="../../assets/img/invoiceActive.svg" alt="dashboard" class="iconActive"/>
+          <img src="../../assets/img/invoice.svg" alt="dashboard" class="iconNotActive"/>
+          <h2 class="dasboard-tabs__heading mb-0">Invoices</h2>
+        </div>
+        <div class="dasboard-tabs d-flex align-items-center">
+          <img src="../../assets/img/roomActive.svg" alt="dashboard" class="iconActive"/>
+          <img src="../../assets/img/room.svg" alt="dashboard" class="iconNotActive"/>
+          <h2 class="dasboard-tabs__heading mb-0">Room</h2>
+        </div>
+        <div class="dasboard-tabs d-flex align-items-center">
+          <img src="../../assets/img/ticketActive.svg" alt="dashboard" class="iconActive"/>
+          <img src="../../assets/img/ticket.svg" alt="dashboard" class="iconNotActive"/>
+          <h2 class="dasboard-tabs__heading mb-0">Tickets</h2>
+        </div>
+        <div class="dasboard-tabs d-flex align-items-center">
+          <img src="../../assets/img/settingActive.svg" alt="dashboard" class="iconActive"/>
+          <img src="../../assets/img/setting.svg" alt="dashboard" class="iconNotActive"/>
+          <h2 class="dasboard-tabs__heading mb-0">Settings</h2>
+        </div>
+        
+      </div>
+    </aside>
+    <div class="sidebar-arrow d-flex justify-content-center align-items-center" [ngClass]="!showMyContainer ? 'arrowChange' : ''" (click)="showMyContainer=!showMyContainer" >
+      <img src="../../assets/img/sidebar-arrow.svg" alt="arrow" [ngClass]="!showMyContainer ? 'rotate90' : '' "/>
+    </div>
   </div>
   <section class="tabs-content w-100 overflow-hidden">
     <header class="dashboard-header d-flex justify-content-between">
@@ -92,7 +139,7 @@
             </p>
             <div class="dashboard-card mt-4">
               <div>
-                  <canvas id="barChart" style="width:100%"></canvas>
+                  <canvas id="barChart"></canvas>
               </div>
             </div>
             <p class="updatedToaste">
