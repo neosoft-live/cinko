@@ -24,7 +24,7 @@
           <ul class="navbar-nav custom-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a
-                class="nav-link active"
+                class="nav-link" [ngClass]="activepage=='/'||activepage=='/home'?'active':''"
                 aria-current="page"
                 routerLink="home"
                 title="Home"
@@ -32,15 +32,15 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="about-us" title="About Us"
+              <a class="nav-link" routerLink="about-us" title="About Us" [ngClass]="activepage=='/about-us'?'active':''"
                 >About Us</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="faq" title="FAQ's">FAQ’s</a>
+              <a class="nav-link" routerLink="faq" title="FAQ's"  [ngClass]="activepage=='/faq'?'active':''">FAQ’s</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" title="Vendors">Vendors</a>
+              <a class="nav-link" title="Vendors" >Vendors</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#" title="Contact Us">Contact Us</a>

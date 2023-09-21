@@ -1,43 +1,44 @@
 <div class="aside-sticky">
 
-    <aside class="aside-section" *ngIf='showMyContainer'>
+    <aside class="aside-section"  [ngClass]="showMyContainer?'active-small':''">
         <img
           src="../../assets/img/cinko-image.png"
           alt="cinko"
-          class="aside-cinko"
+          class="aside-cinko cinko-full-icon"
         />
+        <img src="../../assets/img/Fav1.png" alt="dashboard" class="aside-cinko cinko-icon"/>
         <div class="tabs-section">
-          <div routerLink="/dashboard" class="dasboard-tabs d-flex align-items-center sideNavActive" >   
+          <div routerLink="/dashboard" class="dasboard-tabs d-flex align-items-center " [ngClass]="pageactive=='/dashboard'?'sideNavActive':''" >   
             <img src="../../assets/img/dashboard.svg" alt="dashboard" class="iconActive"/>
             <img src="../../assets/img/dashboardWhite.svg" alt="dashboard" class="iconNotActive"/>
             <h2 class="dasboard-tabs__heading mb-0">Dashboard</h2>
           </div>
-          <div routerLink="/hotels-list" class="dasboard-tabs d-flex align-items-center">
+          <div routerLink="/hotels-list" class="dasboard-tabs d-flex align-items-center" [ngClass]="pageactive=='/hotels-list'?'sideNavActive':''">
             <img src="../../assets/img/my-hotelsActive.svg" alt="dashboard" class="iconActive" />
             <img src="../../assets/img/my-hotels.svg" alt="dashboard" class="iconNotActive"/>
             <h2 class="dasboard-tabs__heading mb-0">My Hotels</h2>
           </div>
-          <div routerLink="/hotel-booking" class="dasboard-tabs d-flex align-items-center" >
+          <div routerLink="/hotel-booking" class="dasboard-tabs d-flex align-items-center"  [ngClass]="pageactive=='/hotel-booking'?'sideNavActive':''">
             <img src="../../assets/img/CalendarActive.svg" alt="dashboard" class="iconActive"/>
             <img src="../../assets/img/Calendar.svg" alt="dashboard" class="iconNotActive"/>
             <h2 class="dasboard-tabs__heading mb-0">Bookings</h2>
           </div>
-          <div routerLink="/hotel-invoice" class="dasboard-tabs d-flex align-items-center">
+          <div routerLink="/hotel-invoice" class="dasboard-tabs d-flex align-items-center"  [ngClass]="pageactive=='/hotel-invoice'?'sideNavActive':''">
             <img src="../../assets/img/invoiceActive.svg" alt="dashboard" class="iconActive"/>
             <img src="../../assets/img/invoice.svg" alt="dashboard" class="iconNotActive"/>
             <h2 class="dasboard-tabs__heading mb-0">Invoices</h2>
           </div>
-          <div routerLink="/my-room" class="dasboard-tabs d-flex align-items-center">
+          <div routerLink="/my-room" class="dasboard-tabs d-flex align-items-center"  [ngClass]="pageactive=='/my-room'?'sideNavActive':''">
             <img src="../../assets/img/roomActive.svg" alt="dashboard" class="iconActive"/>
             <img src="../../assets/img/room.svg" alt="dashboard" class="iconNotActive"/>
             <h2 class="dasboard-tabs__heading mb-0">Room</h2>
           </div>
-          <div routerLink="/view-tickets" class="dasboard-tabs d-flex align-items-center">
+          <div routerLink="/hotel-ticket" class="dasboard-tabs d-flex align-items-center"  [ngClass]="pageactive=='/hotel-ticket'?'sideNavActive':''">
             <img src="../../assets/img/ticketActive.svg" alt="dashboard" class="iconActive"/>
             <img src="../../assets/img/ticket.svg" alt="dashboard" class="iconNotActive"/>
             <h2 class="dasboard-tabs__heading mb-0">Tickets</h2>
           </div>
-          <div routerLink="/user-profile" class="dasboard-tabs d-flex align-items-center">
+          <div routerLink="/user-profile" class="dasboard-tabs d-flex align-items-center"  [ngClass]="pageactive=='/user-profile'?'sideNavActive':''">
             <img src="../../assets/img/settingActive.svg" alt="dashboard" class="iconActive"/>
             <img src="../../assets/img/setting.svg" alt="dashboard" class="iconNotActive"/>
             <h2 class="dasboard-tabs__heading mb-0">Settings</h2>
@@ -46,7 +47,7 @@
         </div>
       </aside>
       <div class="sidebar-arrow d-flex justify-content-center align-items-center" [ngClass]="!showMyContainer ? 'arrowChange' : ''" (click)="showMyContainer=!showMyContainer" >
-        <img src="../../assets/img/sidebar-arrow.svg" alt="arrow" [ngClass]="!showMyContainer ? 'rotate90' : '' "/>
+        <img src="../../assets/img/sidebar-arrow.svg" alt="arrow" [ngClass]="!showMyContainer ? '' : 'rotate90' "/>
       </div>
 
 </div>

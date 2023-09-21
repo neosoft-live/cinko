@@ -125,10 +125,10 @@
       <div class="user-settings">
         <h2 class="user-settings__heading mb-3">Setting</h2>
         <div class="setting-list">
-          <p class="title mb-0">Reset password</p>
+          <p class="title mb-0" (click)="resetPassword()">Reset password</p>
         </div>
         <div class="setting-list">
-          <p class="title mb-0">Update Payments Details</p>
+          <p class="title mb-0" (click)="updatePayment()">Update Payments Details</p>
         </div>
         <div class="setting-list">
           <p class="title mb-0">Receive Notifications</p>
@@ -140,6 +140,7 @@
 </div>
 
 <div class="popup-overlary" *ngIf="showUpdateProfilePopup">
+  <div class="popup-bg-close" (click)="updateProfile()"></div>
   <div class="model">
     <div class="model-header d-flex justify-content-between">
       <h2 class="model-title">Update Card</h2>
@@ -255,6 +256,93 @@
       </div>
       <div class="d-flex justify-content-end">
         <button class="btn btn-tritary" (click)="updateProfile()">CLOSE</button>
+        <button class="btn btn-primary">SUBMIT</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="popup-overlary" *ngIf="showUpdatePaymentPopup">
+  <div class="popup-bg-close" (click)="updatePayment()"></div>
+  <div class="model">
+    <div class="model-header d-flex justify-content-between">
+      <h2 class="model-title">Update Card</h2>
+      <img src="../../assets/img/close-model.svg" alt="close model" (click)="updatePayment()">
+    </div>
+    <div class="model-content">
+      <div class="row">
+        <p class="payment-title mb-0">Payment Type</p>
+        <div class="d-flex align-items-center mb-3">
+          <div class="d-flex align-items-center payment-radio">
+            <input type="radio" id="Paypal" name="gender" />
+            <label for="Paypal" class="payment-title text-black">Paypal</label>
+          </div>
+          <div class="d-flex align-items-center payment-radio">
+            <input type="radio" id="ach" name="gender"  />
+            <label for="ach" class="payment-title" 
+              >ACH</label
+            >
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="float-label mb-5">
+            <input type="text" class="float-control" required />
+            <label for="">Paypal ID</label>
+          </div>
+        </div>
+        
+        
+      </div>
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-tritary" (click)="updatePayment()">CLOSE</button>
+        <button class="btn btn-primary">SUBMIT</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup-overlary" *ngIf="showResetPasswordPopup">
+  <div class="popup-bg-close" (click)="resetPassword()"></div>
+  <div class="model">
+    <div class="model-header d-flex justify-content-between">
+      <h2 class="model-title">Reset Password</h2>
+      <img src="../../assets/img/close-model.svg" alt="close model" (click)="resetPassword()">
+    </div>
+    <div class="model-content">
+      <div class="row">
+        
+        <div class="col-sm-12">
+          <div class="float-label mb-5">
+            <input type="text" class="float-control" required />
+            <label for="">Old Password</label>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="float-label mb-5">
+            <input type="text" class="float-control" required />
+            <label for="">New Password</label>
+            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="float-label mb-5">
+            <select class="form-select" aria-label="Default select example" class="float-control">
+              <option selected>Confirm New Password</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+            </select>
+            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+          </div>
+        </div>
+        
+        
+      </div>
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-tritary" (click)="resetPassword()">CLOSE</button>
         <button class="btn btn-primary">SUBMIT</button>
       </div>
     </div>

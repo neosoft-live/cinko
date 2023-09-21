@@ -83,17 +83,7 @@
   font-weight: 400;
   line-height: 20px; 
 }
-.arrowChange{
-  background-color: #870ea8; 
-  color: var(--white);
-  left: -16px;
-}
-.rotate90 {
-  transform: rotate(180deg);
-  color: white;
-  fill: white;
-  filter: brightness(20);
-}
+
 .dasboard-subtitiles {
   font-family: var(--primary-font), sans-serif;
   font-weight: 600;

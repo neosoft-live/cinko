@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin-aside',
@@ -6,16 +7,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./admin-aside.component.css']
 })
 export class AdminAsideComponent {
-  showMyContainer: boolean = true;
-  public pageactive: string = "dashboard";
+  showMyContainer: boolean = false;
+  public pageactive: string = "/dashboard";
 
 
-  ngOnInit(){
-    console.log(this.pageactive);
+  constructor(private router:Router){
+    router.events.subscribe((val)=>{
+      if(val instanceof NavigationEnd){
+        this.pageactive = val.url;
+
+        switch(this.pageactive){
+          case "/add-new-hotel":
+            this.pageactive = "/hotels-list";
+        }
+        console.log(this.pageactive);
+      }
+    })
   }
-
-
-    navigateto(){
-      this.pageactive='hotels-list'
-    }
+  
 }

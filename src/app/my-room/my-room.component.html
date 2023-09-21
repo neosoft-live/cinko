@@ -47,7 +47,7 @@
                 </label>
               </div>
               <div class="addHotelBtn">
-                <button class="btn btn-primary">+ Add New Room</button>
+                <button class="btn btn-primary" (click)="addroompopup()">+ Add New Room</button>
               </div>
             </div>
 
@@ -65,10 +65,10 @@
                     <p><span>Address: </span>105 S Amos Ave, Springfield, IL 62704,</p>
                     <p><span>Category: </span>Deluxe Room</p>
                     <div class="d-flex justify-content-between iconWidth">
-                      <img src="../../assets/img/dateIcon.svg" alt="date icon">
-                      <img src="../../assets/img/eyeToView.svg" alt="view icon">
+                      <img src="../../assets/img/dateIcon.svg" alt="date icon" (click)="addroomavailablepopup()">
+                      <img src="../../assets/img/eyeToView.svg" alt="view icon" routerLink="/view-room">
                       <img src="../../assets/img/edit.svg" alt="edit icon">
-                      <img src="../../assets/img/trash.svg" alt="trash icon">
+                      <img src="../../assets/img/trash.svg" alt="trash icon" (click)="deleteroompopup()">
                     </div>
                   </div>
                 </div>
@@ -87,10 +87,10 @@
                     <p><span>Address: </span>105 S Amos Ave, Springfield, IL 62704,</p>
                     <p><span>Category: </span>Deluxe Room</p>
                     <div class="d-flex justify-content-between iconWidth">
-                      <img src="../../assets/img/dateIcon.svg" alt="date icon">
-                      <img src="../../assets/img/eyeToView.svg" alt="view icon">
+                      <img src="../../assets/img/dateIcon.svg" alt="date icon" (click)="addroomavailablepopup()">
+                      <img src="../../assets/img/eyeToView.svg" alt="view icon" routerLink="/view-room">
                       <img src="../../assets/img/edit.svg" alt="edit icon">
-                      <img src="../../assets/img/trash.svg" alt="trash icon">
+                      <img src="../../assets/img/trash.svg" alt="trash icon" (click)="deleteroompopup()">
                     </div>
                   </div>
                 </div>
@@ -109,10 +109,10 @@
                     <p><span>Address: </span>105 S Amos Ave, Springfield, IL 62704,</p>
                     <p><span>Category: </span>Deluxe Room</p>
                     <div class="d-flex justify-content-between iconWidth">
-                      <img src="../../assets/img/dateIcon.svg" alt="date icon">
-                      <img src="../../assets/img/eyeToView.svg" alt="view icon">
+                      <img src="../../assets/img/dateIcon.svg" alt="date icon" (click)="addroomavailablepopup()">
+                      <img src="../../assets/img/eyeToView.svg" alt="view icon" routerLink="/view-room">
                       <img src="../../assets/img/edit.svg" alt="edit icon">
-                      <img src="../../assets/img/trash.svg" alt="trash icon">
+                      <img src="../../assets/img/trash.svg" alt="trash icon" (click)="deleteroompopup()">
                     </div>
                   </div>
                 </div>
@@ -131,10 +131,10 @@
                     <p><span>Address: </span>105 S Amos Ave, Springfield, IL 62704,</p>
                     <p><span>Category: </span>Deluxe Room</p>
                     <div class="d-flex justify-content-between iconWidth">
-                      <img src="../../assets/img/dateIcon.svg" alt="date icon">
-                      <img src="../../assets/img/eyeToView.svg" alt="view icon">
+                      <img src="../../assets/img/dateIcon.svg" alt="date icon" (click)="addroomavailablepopup()">
+                      <img src="../../assets/img/eyeToView.svg" alt="view icon" routerLink="/view-room">
                       <img src="../../assets/img/edit.svg" alt="edit icon">
-                      <img src="../../assets/img/trash.svg" alt="trash icon">
+                      <img src="../../assets/img/trash.svg" alt="trash icon" (click)="deleteroompopup()">
                     </div>
                   </div>
                 </div>
@@ -177,4 +177,173 @@
       </div>
     </section>
   </section>
+</div>
+
+
+<div class="popup-overlary" *ngIf="showAddRoomPopup">
+  <div class="popup-bg-close" (click)="addroompopup()"></div>
+  <div class="model">
+    <div class="model-header d-flex justify-content-between">
+      <h2 class="model-title">Add Room</h2>
+      <img src="../../assets/img/close-model.svg" alt="close model" (click)="addroompopup()">
+    </div>
+    <div class="model-content">
+      <div class="row">
+        
+        <div class="col-sm-6">
+          <div class="float-label mb-5">
+            <select class="form-select" aria-label="Default select example" class="float-control">
+              <option selected>Select Hotel</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+            </select>
+            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="float-label mb-5">
+            <select class="form-select" aria-label="Default select example" class="float-control">
+              <option selected>Category</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+            </select>
+            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="float-label mb-5">
+            <select class="form-select" aria-label="Default select example" class="float-control">
+              <option selected>Facility</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+            </select>
+            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="float-label mb-5">
+            <select class="form-select" aria-label="Default select example" class="float-control">
+              <option selected>Description</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+            </select>
+            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="float-label mb-5">
+            <label for=""></label>
+            <select class="form-select" aria-label="Default select example" class="float-control">
+              <option selected>Company Name </option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+            </select>
+            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="float-label mb-5">
+            <select class="form-select" aria-label="Default select example" class="float-control">
+              <option selected>Swift Code </option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+            </select>
+            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+          </div>
+        </div>
+       
+        <div class="col-sm-6">
+          <div class="float-label mb-5">
+            <label for="" class="file-label">Hotel reg certificate</label>
+            <input
+              type="file"
+              class="float-control file-placeholder"
+              placeholder="No file chosen"
+            />
+          </div>
+        </div>
+        
+        <div class="col-sm-6 align-self-center">
+          <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center payment-radio">
+              <input type="radio" id="Activate" name="gender" />
+              <label for="Activate" class="payment-title text-black">Activate</label>
+            </div>
+            <div class="d-flex align-items-center payment-radio">
+              <input type="radio" id="Deactivate" name="gender" />
+              <label for="Deactivate" class="payment-title"
+                >Deactivate</label
+              >
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-tritary" (click)="addroompopup()">CLOSE</button>
+        <button class="btn btn-primary" (click)="addsuccesspopup()" >SUBMIT</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Make this Room Available  -->
+<div class="popup-overlary" *ngIf="showRoomAvailablePopup">
+  <div class="popup-bg-close" (click)="addroomavailablepopup()"></div>
+  <div class="model">
+    <div class="model-content p-md-5">
+      <h2 class="model-message mb-4 text-center">Are you sure want to make this room available?</h2>
+      <div class="d-flex justify-content-center">
+        <button class="btn btn-tritary" (click)="addroomavailablepopup()">CANCLE</button>
+        <button class="btn btn-primary">OKAY</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Delete Room  --> 
+<div class="popup-overlary" *ngIf="showDeleteRoomPopup">
+  <div class="popup-bg-close" (click)="deleteroompopup()"></div>
+  <div class="model">
+    <div class="model-content p-md-5">
+      <h2 class="model-message mb-4 text-center">Are you sure want to delete this room?</h2>
+      <div class="d-flex justify-content-center">
+        <button class="btn btn-tritary" (click)="deleteroompopup()">CANCLE</button>
+        <button class="btn btn-primary">OKAY</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="popup-overlary" *ngIf="showsuccessPopup">
+  <div class="popup-bg-close" (click)="addsuccesspopup()"></div>
+  <div class="model" style="max-width:596px;">
+    <div class="model-content d-flex flex-column align-items-center p-md-5">
+      <div class="model-success-image">
+        <img src="../../assets/img/success_animation.gif" alt="">
+      </div>
+      <h3 class="model-success-message mb-4 text-center">New Room added sucessfully</h3>
+      
+    </div>
+  </div>
 </div>

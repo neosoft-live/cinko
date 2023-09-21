@@ -56,6 +56,28 @@
 .iconWidth img{
     cursor: pointer;
 }
+
+
+
+.payment-title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .payment-radio{
+    margin: 8px 18px 10px 0;
+  }
+  .float-label .float-control{
+    appearance: none;
+  }
+
+  .float-label img{
+    right: 12px;
+    top: 14px;
+  }
+
+
 @media screen and (max-width:900px) {
     .roomBox{
         flex-direction: column;
