@@ -2,7 +2,7 @@
   <div class="position-relative">
     <app-admin-aside></app-admin-aside>
   </div>
-  <section class="tabs-content content-right w-100 ">
+  <section class="tabs-content content-right w-100 overflow-hidden">
     <header
       class="dashboard-header d-flex justify-content-between align-items-center"
     >
@@ -12,6 +12,17 @@
           <li class="breadcrumb-item active"><a href="#">My Rooms</a></li>
         </ol>
       </nav>
+        
+      <div class="nav-mobile-cinkoicon">
+        <div (click)="showMyContainer=!showMyContainer">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
+            <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#680184" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+        </div>
+        <img src="../../assets/img/logocinko.png" class="cinko-icon" alt="cinko icon">
+      </div>
+
       <div class="d-flex align-items-center">
         <div
           class="dashboard-search d-flex align-items-center justify-content-center me-4"
@@ -39,7 +50,7 @@
       <div>
         <main>
           <div class="hotelList_wrapper dt-bootstrap5">           
-            <div class="d-flex justify-content-between">
+            <div class="d-flex flex-wrap justify-content-between">
               <div class="search_filter">
                 <label>
                   <input type="search" class="form-control" placeholder="Search" aria-controls="search">

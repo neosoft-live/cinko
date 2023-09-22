@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class MyRoomComponent {
 
+  showMyContainer:boolean = true;
 
   showAddRoomPopup:boolean = false;
   showsuccessPopup:boolean = false;

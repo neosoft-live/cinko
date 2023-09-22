@@ -24,6 +24,7 @@ import { HotelInvoiceComponent } from './hotel-invoice/hotel-invoice.component';
 import { HotelTicketComponent } from './hotel-ticket/hotel-ticket.component';
 import { MyRoomComponent } from './my-room/my-room.component';
 import { AdminAsideComponent } from './admin-aside/admin-aside.component';
+import { VendorHeaderComponent } from './vendor-header/vendor-header.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { AdminAsideComponent } from './admin-aside/admin-aside.component';
     HotelInvoiceComponent,
     HotelTicketComponent,
     MyRoomComponent,
-    AdminAsideComponent
+    AdminAsideComponent,
+    VendorHeaderComponent
   ],
   imports: [
     BrowserModule,

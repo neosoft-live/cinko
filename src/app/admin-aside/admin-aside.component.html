@@ -1,7 +1,9 @@
-<div class="aside-sticky">
+<div class="aside-sticky " [ngClass]="showMyContainer?'bgdark':''">
+<!-- <div class="aside-sticky "> -->
 
-    <aside class="aside-section"  [ngClass]="showMyContainer?'active-small':''">
-        <img
+    <aside class="aside-section "  [ngClass]="showMyContainer?'active-small':''">
+        
+      <img
           src="../../assets/img/cinko-image.png"
           alt="cinko"
           class="aside-cinko cinko-full-icon"
@@ -47,7 +49,8 @@
         </div>
       </aside>
       <div class="sidebar-arrow d-flex justify-content-center align-items-center" [ngClass]="!showMyContainer ? 'arrowChange' : ''" (click)="showMyContainer=!showMyContainer" >
-        <img src="../../assets/img/sidebar-arrow.svg" alt="arrow" [ngClass]="!showMyContainer ? '' : 'rotate90' "/>
+        <img src="../../assets/img/sidebar-arrow.svg" alt="arrow" class="sidebar-arrow-icon" [ngClass]="!showMyContainer ? '' : 'rotate90' "/>
+        <img src="../../assets/img/close-model.svg" alt="arrow" class="close-model-icon" [ngClass]="!showMyContainer ? '' : 'rotate90' "/>
       </div>
 
 </div>

@@ -55,7 +55,10 @@
   border-radius: 1rem;
   background-color: var(--white);
   padding: 2.3rem 2.3rem 2.5rem 3.5rem;
-  /* height: 100%; */
+  height: 100%;
+}
+.graph-section .dashboard-card{
+  height: unset;
 }
 .card-number {
   font-family: var(--primary-font), sans-serif;

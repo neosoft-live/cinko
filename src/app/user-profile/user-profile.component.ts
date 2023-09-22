@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-profile.component.css']
 })
 export class UserProfileComponent {
+  showMyContainer:boolean = true;
+
   showUpdateProfilePopup: boolean = false
   showUpdatePaymentPopup: boolean = false
   showResetPasswordPopup: boolean = false

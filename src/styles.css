@@ -865,6 +865,9 @@ html {
 
 @media screen and (max-width: 576px){
   .hotelList_wrapper .d-flex{
+    flex-direction: row;
+  }
+  .hotelList_wrapper  table .d-flex{
     flex-direction: column;
   }
   .search_filter{
@@ -1755,4 +1758,93 @@ footer {
   .about-sky-img{
     padding-right: 8px;
   }
+}
+
+
+
+.nav-mobile-cinkoicon{
+  display: none;
+}
+.hotelList_wrapper .dt-row{
+  padding: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.dashboard-header{
+  position: fixed;
+    top: 0px;
+    width: calc(100% - 260px);
+}
+.dashboard-section{
+  margin-top: 91px;
+}
+@media screen and (max-width: 576px){
+
+  .dashboard-header{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2.5rem 2rem;
+    width: 100%;
+
+  }
+
+  
+  .dashboard-header nav{
+    display: none;
+  }
+  .nav-mobile-cinkoicon{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .nav-mobile-cinkoicon .cinko-icon{
+    height: 35px;
+  }
+  
+  .dashboard-heading{
+    display: none;
+  }
+  
+  .dashboard-header .user-name .user-heading{
+    display: none;
+  }
+
+  .dashboard-section{
+    margin-top: 91px;
+    padding: 1.5rem;
+  }
+
+  .dashboard-card{
+    padding: 1rem !important;
+  }
+
+  .hotels-form{
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    
+  }
+  .float-label.mb-5{
+    margin-bottom: 2rem !important;
+  }
+
+  .select-location{
+    padding: 1.5rem !important;
+  }
+
+  .select-location .d-flex{
+    gap: 2rem;
+  }
+
+  .dashboard-section .dashboard-heading{
+    display: block;
+  }
+
+  .dataTables_info, .pagination {
+    padding: 1rem !important;
+    
+  }
+  
 }

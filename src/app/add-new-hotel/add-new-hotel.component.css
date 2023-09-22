@@ -32,6 +32,7 @@
 }
 @media (max-width: 576px) {
   .float-label.nearest-location {
-    width: 250px;
+    width: 100%;
+    max-width: 100%;
   }
 }

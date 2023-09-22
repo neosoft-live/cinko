@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, SimpleChanges } from '@angular/core';
 import { Chart, registerables } from 'chart.js';
+import { GlobalServiceService } from '../global-service.service';
+
 Chart.register(...registerables);
 
 @Component({
@@ -8,7 +10,13 @@ Chart.register(...registerables);
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
-  showMyContainer: boolean = true;
+
+    showMyContainer:boolean = true;
+
+
+    constructor(private globleservices:GlobalServiceService){
+
+    }
 
   ngOnInit(){
     var barChart = new Chart("barChart", {
@@ -85,7 +93,30 @@ export class DashboardComponent {
 
 
     barChart.resize();
+
+
+    
+    
+     
   }
 
  
+
+ 
+
+  changeShowMyContainer(){
+    // this.globleservices.asideGlobalVariable =! this.globleservices.asideGlobalVariable;
+    // console.log(this.globleservices.asideGlobalVariable);
+       
+    this.globleservices.selectedProduct$.subscribe((value) => {
+        // this.selectedProduct = value;
+        this.showMyContainer = value;
+        // console.log(value);
+        
+    });
+    
+    this.showMyContainer = !this.showMyContainer;
+    this.globleservices.setProduct(this.showMyContainer);
+    console.log(this.globleservices.selectedProduct$);
+  }
 }

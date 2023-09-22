@@ -5,4 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './view-room.component.html',
   styleUrls: ['./view-room.component.css'],
 })
-export class ViewRoomComponent {}
+export class ViewRoomComponent {
+  showMyContainer:boolean = true;
+  
+}

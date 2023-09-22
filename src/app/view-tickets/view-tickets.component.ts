@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./view-tickets.component.css']
 })
 export class ViewTicketsComponent {
-
+  showMyContainer:boolean = true;
 }

@@ -45,13 +45,55 @@
     transition: all 0.5s ease-in-out;
   }
 
+  .sidebar-arrow .close-model-icon{
+    display: none;
+  }
+
   
 @media (max-width:576px) {
     .aside-section{
         width: 0px;
         overflow: hidden;
     }
-    .sidebar-arrow{
+    .sidebar-arrow-icon{
         display: none !important;
+    }
+
+    .sidebar-arrow {
+      right: 5px;
+      top: 5px;
+    }
+    .aside-sticky{
+      position: fixed;
+    }
+    .aside-sticky.bgdark{
+     background-color: rgba(58, 58, 58, 0.281);
+     width: 100%;
+     height: 100%;
+    }
+    .aside-section.active-small{
+        position: absolute;
+        z-index: 591;
+        left: 0;
+        width: 300px;
+        max-width: 80vw;
+    }
+
+    .aside-section.active-small .cinko-icon{
+      display: none;
+    }
+    .aside-section.active-small .cinko-full-icon{
+      display: inline-block;
+    }
+
+    .aside-section.active-small .dasboard-tabs__heading{
+      display: block;
+    }
+    .sidebar-arrow{
+      display: none;
+    }
+
+    .sidebar-arrow .close-model-icon{
+      display: block;
     }
 }
