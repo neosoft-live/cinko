@@ -488,7 +488,9 @@ html {
   line-height: 2.4rem;
   color: var(--textblack);
 }
-
+.user-name{
+  text-decoration: none;
+}
 .user-name .user-dropdown-arrow {
   position: relative;
   content: url("./assets/img/down-arrow.svg");
@@ -532,7 +534,7 @@ html {
   color: #fff;
 
 }
-.user-dropdown:focus-within .user-dropdown-option{
+.user-name:focus-within .user-dropdown .user-dropdown-option{
   display: block;
 }
 
@@ -751,9 +753,11 @@ html {
 }
 .hotelDataTable th{
   color:#3A3A3A;
+  font-weight: 500;
 }
 .hotelList_wrapper tr td{
   color:#414141;
+  font-weight: 400;
 }
 .pagination li .page-link {
   border-radius: 8px;

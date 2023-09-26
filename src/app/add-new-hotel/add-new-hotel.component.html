@@ -10,7 +10,7 @@
         <ol class="breadcrumb mb-0">
           <li class="breadcrumb-item"><a href="#">Home</a></li>
           <li class="breadcrumb-item"><a href="#">Hotels</a></li>
-          <li class="breadcrumb-item active">Add New Hotel</li>
+          <li class="breadcrumb-item active"><a href="#">Add New Hotel</a></li>
         </ol>
       </nav>
 
@@ -36,7 +36,7 @@
         >
           <img src="../../assets/img/notification.svg" alt="search" />
         </div>
-        <div class="user-name d-flex align-items-center">
+        <a href="javascript:void(0)" class="user-name d-flex align-items-center">
           <img
             src="../../assets/img/user-img.png"
             alt="user"
@@ -52,7 +52,7 @@
                 <li><a href="javascript:void(0)" class="user-dropdown-link"> Logout</a></li>
             </ul>
           </div>
-        </div>
+        </a>
       </div>
     </header>
     <section class="dashboard-section">
@@ -183,7 +183,7 @@
           />
         </div>
         <div class="mt-5 d-flex justify-content-end">
-          <button class="btn btn-secondary">BACK</button>
+          <button class="btn btn-secondary" routerLink="/hotels-list">BACK</button>
           <button class="btn btn-primary">SUBMIT</button>
         </div>
       </div>

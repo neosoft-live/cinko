@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class UserProfileComponent {
   showMyContainer:boolean = true;
+  paymentMethod:string = "paypal";
 
   showUpdateProfilePopup: boolean = false
   showUpdatePaymentPopup: boolean = false
@@ -33,4 +34,8 @@ export class UserProfileComponent {
     }
   }
   
+  switchPaymentMode(paymentMethod = "paypal"){
+    console.log(paymentMethod);
+  }
+
 }

@@ -9,7 +9,7 @@
       <nav>
         <ol class="breadcrumb mb-0">
           <li class="breadcrumb-item"><a href="/dashboard">Home</a></li>
-          <li class="breadcrumb-item active"><a href="javascript:void(0)">profile</a></li>
+          <li class="breadcrumb-item active"><a href="javascript:void(0)">Profile</a></li>
         </ol>
       </nav>
 
@@ -35,7 +35,7 @@
         >
           <img src="../../assets/img/notification.svg" alt="search" />
         </div>
-        <div class="user-name d-flex align-items-center">
+        <a href="javascript:void(0)" class="user-name d-flex align-items-center">
           <img
             src="../../assets/img/user-img.png"
             alt="user"
@@ -51,7 +51,7 @@
                 <li><a href="javascript:void(0)" class="user-dropdown-link"> Logout</a></li>
             </ul>
           </div>
-        </div>
+        </a>
       </div>
     </header>
     <section class="dashboard-section">
@@ -173,16 +173,16 @@
         <div class="d-flex align-items-center mb-3">
           <div class="d-flex align-items-center payment-radio">
             <input type="radio" id="Paypal" name="gender" />
-            <label for="Paypal" class="payment-title text-black">Paypal</label>
+            <label for="Paypal" class="payment-title text-black" (click)="paymentMethod='paypal'" >Paypal</label>
           </div>
           <div class="d-flex align-items-center payment-radio">
             <input type="radio" id="ach" name="gender" />
-            <label for="ach" class="payment-title"
+            <label for="ach" class="payment-title" (click)="paymentMethod='ach'"
               >ACH</label>
           </div>
         </div>
 
-        <div class="row">
+        <div class="row" *ngIf="paymentMethod=='paypal'">
           <div class="col-sm-6">
             <div class="float-label mb-5">
               <select class="form-select" aria-label="Default select example" class="float-control">
@@ -248,19 +248,7 @@
               <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
             </div>
           </div>
-          <div class="col-sm-6">
-            <div class="float-label mb-5">
-              <select class="form-select" aria-label="Default select example" class="float-control">
-                <option selected>Swift Code </option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-                <option value="4">Four</option>
-                <option value="5">Five</option>
-              </select>
-              <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
-            </div>
-          </div>
+          
           <div class="col-sm-6">
             <div class="float-label mb-5">
               <select class="form-select" aria-label="Default select example" class="float-control">
@@ -276,10 +264,7 @@
           </div>
         </div>
         
-
-
-
-        <div class="row">
+        <div class="row" *ngIf="paymentMethod=='ach'">
           <div class="col-sm-6">
             <div class="float-label mb-5">
               <input type="text" class="float-control" required />
