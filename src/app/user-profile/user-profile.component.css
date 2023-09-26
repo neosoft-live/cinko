@@ -59,9 +59,9 @@
   width: fit-content;
   margin-left: auto;
 }
-.user-info__mail {
-  /* margin-right: 7rem; */
-}
+/* .user-info__mail {
+   margin-right: 7rem; 
+} */
 .user-profile__picture {
   position: absolute;
   top: -80px;
