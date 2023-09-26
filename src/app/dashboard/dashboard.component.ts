@@ -48,6 +48,8 @@ export class DashboardComponent {
         }]
       },
       options: {
+        responsive: true,
+        maintainAspectRatio: false,
           scales: {
               y: {
                   beginAtZero: true
@@ -55,6 +57,8 @@ export class DashboardComponent {
           }
       }
   });
+
+  console.log("bar chart",barChart.canvas.parentNode);
 
   var lineChart = new Chart("lineChart", {
     type: 'line',
@@ -83,6 +87,8 @@ export class DashboardComponent {
         }]
     },
     options: {
+        responsive: true,
+        maintainAspectRatio: false,
         scales: {
             y: {
                 beginAtZero: true

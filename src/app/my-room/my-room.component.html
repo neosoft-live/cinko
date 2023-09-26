@@ -41,6 +41,15 @@
             class="user-img"
           />
           <h2 class="user-heading">David Sperry</h2>
+          <div class="user-dropdown">
+            <a href="javascript:void(0)" class="user-dropdown-arrow"></a> 
+            <ul class="user-dropdown-option">
+                <li><a href="/home" class="user-dropdown-link"> Go to website</a></li>
+                <li><a href="javascript:void(0)" class="user-dropdown-link"> Download Vendor Manual</a></li>
+                <li><a href="/user-profile" class="user-dropdown-link"> Profile</a></li>
+                <li><a href="javascript:void(0)" class="user-dropdown-link"> Logout</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -66,7 +75,7 @@
               <div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="d-flex roomBox">
                   <div class="col-md-4 col-sm-12 col-xs-12">
-                    <img src="../../assets/img/room1.png" alt="room1" class="w-100"/>
+                    <img src="../../assets/img/room1.png" alt="room1" class="w-100 room-img"/>
                   </div>
                   <div class="col-md-8 col-sm-12 col-xs-12 room-detail">
                     <div class="d-flex justify-content-between">
@@ -88,7 +97,7 @@
               <div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="d-flex roomBox">
                   <div class="col-md-4 col-sm-12">
-                    <img src="../../assets/img/room1.png" alt="room1" class="w-100"/>
+                    <img src="../../assets/img/room1.png" alt="room1" class="w-100 room-img"/>
                   </div>
                   <div class="col-md-8 col-xs-12 room-detail">
                     <div class="d-flex justify-content-between">
@@ -110,7 +119,7 @@
               <div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="d-flex roomBox">
                   <div class="col-md-4 col-sm-12">
-                    <img src="../../assets/img/room1.png" alt="room1" class="w-100"/>
+                    <img src="../../assets/img/room1.png" alt="room1" class="w-100 room-img"/>
                   </div>
                   <div class="col-md-8 col-xs-12 room-detail">
                     <div class="d-flex justify-content-between">
@@ -132,7 +141,7 @@
               <div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="d-flex roomBox">
                   <div class="col-md-4 col-sm-12">
-                    <img src="../../assets/img/room1.png" alt="room1" class="w-100"/>
+                    <img src="../../assets/img/room1.png" alt="room1" class="w-100 room-img"/>
                   </div>
                   <div class="col-md-8 col-xs-12 room-detail">
                     <div class="d-flex justify-content-between">
@@ -205,11 +214,8 @@
           <div class="float-label mb-5">
             <select class="form-select" aria-label="Default select example" class="float-control">
               <option selected>Select Hotel</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-              <option value="4">Four</option>
-              <option value="5">Five</option>
+              <option value="1">Hola</option>
+              <option value="2">David</option>
             </select>
             <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
           </div>
@@ -218,11 +224,11 @@
           <div class="float-label mb-5">
             <select class="form-select" aria-label="Default select example" class="float-control">
               <option selected>Category</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-              <option value="4">Four</option>
-              <option value="5">Five</option>
+              <option value="1">Standard Room</option>
+              <option value="2">Deluxe Room</option>
+              <option value="3">Suite</option>
+              <option value="4">Jouior Suite</option>
+              <option value="5">Executive Suite</option>
             </select>
             <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
           </div>
@@ -231,56 +237,22 @@
           <div class="float-label mb-5">
             <select class="form-select" aria-label="Default select example" class="float-control">
               <option selected>Facility</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-              <option value="4">Four</option>
-              <option value="5">Five</option>
+              <option value="1">SPA</option>
+              <option value="2">Pool</option>
+              <option value="3">Room Service</option>
+              <option value="4">Free Parking</option>
+              <option value="5">Fitness Center</option>
             </select>
             <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
           </div>
         </div>
         <div class="col-sm-6">
           <div class="float-label mb-5">
-            <select class="form-select" aria-label="Default select example" class="float-control">
-              <option selected>Description</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-              <option value="4">Four</option>
-              <option value="5">Five</option>
-            </select>
-            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+            <input type="text"  class="float-control" required>
+            <label for="" class="file-label">Description</label>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="float-label mb-5">
-            <label for=""></label>
-            <select class="form-select" aria-label="Default select example" class="float-control">
-              <option selected>Company Name </option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-              <option value="4">Four</option>
-              <option value="5">Five</option>
-            </select>
-            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="float-label mb-5">
-            <select class="form-select" aria-label="Default select example" class="float-control">
-              <option selected>Swift Code </option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-              <option value="4">Four</option>
-              <option value="5">Five</option>
-            </select>
-            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
-          </div>
-        </div>
-       
+        
         <div class="col-sm-6">
           <div class="float-label mb-5">
             <label for="" class="file-label">Hotel reg certificate</label>

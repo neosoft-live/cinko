@@ -226,7 +226,8 @@ html {
   }
   .custom-nav .nav-item > .nav-link:hover ,.custom-nav .nav-item > .nav-link.active  {
     color:#680184;
-    font-weight: 600;
+    /* font-weight: 600; */
+    text-shadow: 0px 0px 1px #680184;
   }
   .float-label {
     position: relative;
@@ -394,6 +395,7 @@ html {
   width: 260px;
   background: linear-gradient(180deg, #870ea8 0%, #4a005f 219.88%);
   min-height: 100vh;
+  overflow: hidden;
 }
 .aside-cinko {
   height: 5rem;
@@ -486,13 +488,52 @@ html {
   line-height: 2.4rem;
   color: var(--textblack);
 }
-.user-name::after {
+
+.user-name .user-dropdown-arrow {
   position: relative;
   content: url("./assets/img/down-arrow.svg");
   right: 0;
   top: 0;
   margin-left: 1rem;
   cursor: pointer;
+}
+
+
+.user-dropdown{
+  position: relative;
+}
+.user-dropdown .user-dropdown-option{
+  position: absolute;
+  right: 0px;
+  list-style-type: none;
+  margin: 0px;
+  margin-top: 1rem;
+  padding: 0px;
+  background-color: #fff;
+  min-width: 150px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px #c7c7c7;
+  display: none;
+}
+.user-dropdown .user-dropdown-option .user-dropdown-link{
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #7d7d7d;
+  padding: 1rem 1.5rem;
+  white-space: nowrap;
+  display: block;
+  transition: 'background' 0.5s ease-in-out;
+
+}
+
+.user-dropdown .user-dropdown-option .user-dropdown-link:hover{
+  background: linear-gradient(180deg, #870ea8 0%, #4a005f 219.88%);
+  color: #fff;
+
+}
+.user-dropdown:focus-within .user-dropdown-option{
+  display: block;
 }
 
 .hotels-form {
@@ -708,6 +749,12 @@ html {
   padding: 16px;
   margin-top: 16px;
 }
+.hotelDataTable th{
+  color:#3A3A3A;
+}
+.hotelList_wrapper tr td{
+  color:#414141;
+}
 .pagination li .page-link {
   border-radius: 8px;
   background: #ECECEC;
@@ -718,7 +765,7 @@ html {
   font-size: 12px;
   font-weight: 500;
   text-align: center;
-  margin-left: 12px!important;
+  margin-left: 5px!important;
 }
 .pagination li .page-link:hover,.pagination li .page-link.active{
   background-color: var(--base-color);
@@ -1619,6 +1666,10 @@ footer {
   align-items: center;
   object-fit: cover;
   border-radius: 1rem;
+
+}
+.card .image-outer .img-fluid {
+  border-radius: 1rem 1rem 0rem 0rem;
 }
 .videoplayer a:hover .image-outer {
   transform: scale(1.03);
@@ -1774,7 +1825,8 @@ footer {
 .dashboard-header{
   position: fixed;
     top: 0px;
-    width: calc(100% - 260px);
+    width: calc(100% - 260px); 
+    width: -webkit-fill-available;
 }
 .dashboard-section{
   margin-top: 91px;

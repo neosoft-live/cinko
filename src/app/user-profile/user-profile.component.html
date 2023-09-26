@@ -8,8 +8,8 @@
     >
       <nav>
         <ol class="breadcrumb mb-0">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active"><a href="#">My Rooms</a></li>
+          <li class="breadcrumb-item"><a href="/dashboard">Home</a></li>
+          <li class="breadcrumb-item active"><a href="javascript:void(0)">profile</a></li>
         </ol>
       </nav>
 
@@ -42,11 +42,20 @@
             class="user-img"
           />
           <h2 class="user-heading">David Sperry</h2>
+          <div class="user-dropdown">
+            <a href="javascript:void(0)" class="user-dropdown-arrow"></a> 
+            <ul class="user-dropdown-option">
+                <li><a href="/home" class="user-dropdown-link"> Go to website</a></li>
+                <li><a href="javascript:void(0)" class="user-dropdown-link"> Download Vendor Manual</a></li>
+                <li><a href="/user-profile" class="user-dropdown-link"> Profile</a></li>
+                <li><a href="javascript:void(0)" class="user-dropdown-link"> Logout</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
     <section class="dashboard-section">
-      <h2 class="dashboard-heading mb-0">My Rooms</h2>
+      <h2 class="dashboard-heading mb-0">Profile</h2>
       <div class="user-profile">
         <div class="position-relative">
           <img
@@ -110,7 +119,7 @@
               <button class="btn btn-tritary" (click)="updateProfile()">Update Profile</button>
             </div>
           </div>
-          <div class="row user-address">
+          <div class="row user-address justify-content-between">
             <div class="col-md-2">
               <h2 class="myhotels-title">Gender</h2>
               <p class="myhotels-text">Male</p>
@@ -169,106 +178,120 @@
           <div class="d-flex align-items-center payment-radio">
             <input type="radio" id="ach" name="gender" />
             <label for="ach" class="payment-title"
-              >ACH</label
-            >
+              >ACH</label>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="float-label mb-5">
-            <select class="form-select" aria-label="Default select example" class="float-control">
-              <option selected>Bank Name</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-              <option value="4">Four</option>
-              <option value="5">Five</option>
-            </select>
-            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="float-label mb-5">
+              <select class="form-select" aria-label="Default select example" class="float-control">
+                <option selected>Bank Name</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+              </select>
+              <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="float-label mb-5">
+              <select class="form-select" aria-label="Default select example" class="float-control">
+                <option selected>Bank Address</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+              </select>
+              <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="float-label mb-5">
+              <select class="form-select" aria-label="Default select example" class="float-control">
+                <option selected>Bank Routing Number</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+              </select>
+              <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="float-label mb-5">
+              <select class="form-select" aria-label="Default select example" class="float-control">
+                <option selected>Bank Account Number </option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+              </select>
+              <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="float-label mb-5">
+              <select class="form-select" aria-label="Default select example" class="float-control">
+                <option selected>Company Name </option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+              </select>
+              <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="float-label mb-5">
+              <select class="form-select" aria-label="Default select example" class="float-control">
+                <option selected>Swift Code </option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+              </select>
+              <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="float-label mb-5">
+              <select class="form-select" aria-label="Default select example" class="float-control">
+                <option selected>Account Type </option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+              </select>
+              <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+            </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="float-label mb-5">
-            <select class="form-select" aria-label="Default select example" class="float-control">
-              <option selected>Bank Address</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-              <option value="4">Four</option>
-              <option value="5">Five</option>
-            </select>
-            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="float-label mb-5">
-            <select class="form-select" aria-label="Default select example" class="float-control">
-              <option selected>Bank Routing Number</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-              <option value="4">Four</option>
-              <option value="5">Five</option>
-            </select>
-            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="float-label mb-5">
-            <select class="form-select" aria-label="Default select example" class="float-control">
-              <option selected>Bank Account Number </option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-              <option value="4">Four</option>
-              <option value="5">Five</option>
-            </select>
-            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="float-label mb-5">
-            <select class="form-select" aria-label="Default select example" class="float-control">
-              <option selected>Company Name </option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-              <option value="4">Four</option>
-              <option value="5">Five</option>
-            </select>
-            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="float-label mb-5">
-            <select class="form-select" aria-label="Default select example" class="float-control">
-              <option selected>Swift Code </option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-              <option value="4">Four</option>
-              <option value="5">Five</option>
-            </select>
-            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="float-label mb-5">
-            <select class="form-select" aria-label="Default select example" class="float-control">
-              <option selected>Account Type </option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-              <option value="4">Four</option>
-              <option value="5">Five</option>
-            </select>
-            <img src="../../assets/img/dropDown.svg" alt="drop down" class="position-absolute">
+        
+
+
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="float-label mb-5">
+              <input type="text" class="float-control" required />
+              <label for="">Paypal ID</label>
+            </div>
           </div>
         </div>
         
       </div>
       <div class="d-flex justify-content-end">
         <button class="btn btn-tritary" (click)="updateProfile()">CLOSE</button>
-        <button class="btn btn-primary">SUBMIT</button>
+        <button class="btn btn-primary">UPDATE</button>
       </div>
     </div>
   </div>

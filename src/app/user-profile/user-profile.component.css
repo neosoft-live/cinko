@@ -28,6 +28,8 @@
 }
 .user-contact_data {
   margin-top: 2.5rem;
+  column-gap: 7rem;
+  row-gap: 1rem;
 }
 .user-info .user-media {
   font-family: var(--primary-font), sans-serif;
@@ -58,7 +60,7 @@
   margin-left: auto;
 }
 .user-info__mail {
-  margin-right: 7rem;
+  /* margin-right: 7rem; */
 }
 .user-profile__picture {
   position: absolute;
